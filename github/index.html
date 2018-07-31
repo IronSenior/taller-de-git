@@ -1,0 +1,1080 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Curso básico de git">
+      
+      
+      
+        <meta name="author" content="Sergio Gómez <sergio@uco.es>">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.4">
+    
+    
+      
+        <title>Github - Taller de Git</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#github" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Taller de Git" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                Taller de Git
+              </span>
+              <span class="md-header-nav__topic">
+                Github
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      aulasoftwarelibre/taller-de-git
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Taller de Git" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Taller de Git
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#__github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      aulasoftwarelibre/taller-de-git
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cvs/" title="Sistemas de control de versiones" class="md-nav__link">
+      Sistemas de control de versiones
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../introduccion/" title="Introducción a Git" class="md-nav__link">
+      Introducción a Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../git/" title="Aspectos básicos de Git" class="md-nav__link">
+      Aspectos básicos de Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../usobasico/" title="Uso básico" class="md-nav__link">
+      Uso básico
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../usoavanzado/" title="Uso avanzado" class="md-nav__link">
+      Uso avanzado
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ramas/" title="Ramas" class="md-nav__link">
+      Ramas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Github
+      </label>
+    
+    <a href="./" title="Github" class="md-nav__link md-nav__link--active">
+      Github
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion" title="Configuración" class="md-nav__link">
+    Configuración
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clientes-graficos-para-github" title="Clientes gráficos para GitHub" class="md-nav__link">
+    Clientes gráficos para GitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-un-repositorio" title="Crear un repositorio" class="md-nav__link">
+    Crear un repositorio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clonar-un-repositorio" title="Clonar un repositorio" class="md-nav__link">
+    Clonar un repositorio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ramas-remotas" title="Ramas remotas" class="md-nav__link">
+    Ramas remotas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enviando-actualizaciones" title="Enviando actualizaciones" class="md-nav__link">
+    Enviando actualizaciones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recibiendo-actualizaciones" title="Recibiendo actualizaciones" class="md-nav__link">
+    Recibiendo actualizaciones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problemas-de-sincronizacion" title="Problemas de sincronización" class="md-nav__link">
+    Problemas de sincronización
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-puedo-hacer-push" title="No puedo hacer push" class="md-nav__link">
+    No puedo hacer push
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-puedo-hacer-pull" title="No puedo hacer pull" class="md-nav__link">
+    No puedo hacer pull
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../github-avanzado/" title="Github avanzado" class="md-nav__link">
+      Github avanzado
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gitflow/" title="Flujo de trabajo con Git (git flow)" class="md-nav__link">
+      Flujo de trabajo con Git (git flow)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../referencias/" title="Referencias" class="md-nav__link">
+      Referencias
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion" title="Configuración" class="md-nav__link">
+    Configuración
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clientes-graficos-para-github" title="Clientes gráficos para GitHub" class="md-nav__link">
+    Clientes gráficos para GitHub
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#crear-un-repositorio" title="Crear un repositorio" class="md-nav__link">
+    Crear un repositorio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clonar-un-repositorio" title="Clonar un repositorio" class="md-nav__link">
+    Clonar un repositorio
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ramas-remotas" title="Ramas remotas" class="md-nav__link">
+    Ramas remotas
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enviando-actualizaciones" title="Enviando actualizaciones" class="md-nav__link">
+    Enviando actualizaciones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recibiendo-actualizaciones" title="Recibiendo actualizaciones" class="md-nav__link">
+    Recibiendo actualizaciones
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problemas-de-sincronizacion" title="Problemas de sincronización" class="md-nav__link">
+    Problemas de sincronización
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#no-puedo-hacer-push" title="No puedo hacer push" class="md-nav__link">
+    No puedo hacer push
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-puedo-hacer-pull" title="No puedo hacer pull" class="md-nav__link">
+    No puedo hacer pull
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/aulasoftwarelibre/taller-de-git.git/edit/master/docs/github.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="github">Github<a class="headerlink" href="#github" title="Permanent link">&para;</a></h1>
+<p>Github es lo que se denomina una forja, un repositorio de proyectos que usan Git como sistema de control de versiones. Es la forja más popular, ya que alberga más de 10 millones de repositorios. Debe su popularidad a sus funcionalidades sociales, principalmente dos: la posibilidad de hacer forks de otros proyectos y la posibilidad de cooperar aportando código para arreglar errores o mejorar el código. Si bien, no es que fuera una novedad, sí lo es lo fácil que resulta hacerlo. A raíz de este proyecto han surgido otros como <em>Gitorius</em> o <em>Gitlab</em>, pero <em>Github</em> sigue siendo el más popular y el que tiene mejores y mayores características. algunas de estas son:</p>
+<ul>
+<li>Un wiki para documentar el proyecto, que usa MarkDown como lenguaje de marca.</li>
+<li>Un portal web para cada proyecto.</li>
+<li>Funcionalidades de redes sociales como followers.</li>
+<li>Gráficos estadísticos.</li>
+<li>Revisión de código y comentarios.</li>
+<li>Sistemas de seguimiento de incidencias.</li>
+</ul>
+<p>Lo primero es entrar en el portal (<a href="https://github.com/">https://github.com/</a>) para crearnos una cuenta si no la tenemos aún.</p>
+<h2 id="configuracion">Configuración<a class="headerlink" href="#configuracion" title="Permanent link">&para;</a></h2>
+<p>Vamos a aprovechar para añadir la clave RSA que generamos antes, para poder acceder desde git a los repositorios. Para ellos nos vamos al menú de configuración de usuario (<em>Settings</em>)</p>
+<p><img alt="Barra principal de menú" src="../images/github-topbar.png" /></p>
+<p>Nos vamos al menú 'SSH and GPG Keys' y añadimos una nueva clave. En <em>Title</em> indicamos una descripción que nos ayude a saber de dónde procede la clave y en key volcamos el contenido del archivo <code>~/.ssh/id_rsa.pub</code>. Y guardamos la clave.</p>
+<p><img alt="Clave SSH" src="../images/github-sshkeys.png" /></p>
+<p>Con esto ya tendriamos todo nuestro entorno para poder empezar a trabajar desde nuestro equipo.</p>
+<h2 id="clientes-graficos-para-github">Clientes gráficos para GitHub<a class="headerlink" href="#clientes-graficos-para-github" title="Permanent link">&para;</a></h2>
+<p>Además, para Github existe un cliente propio tanto para Windows como para MacOSX:</p>
+<ul>
+<li>
+<p>Cliente Windows: <a href="http://windows.github.com/">http://windows.github.com/</a></p>
+</li>
+<li>
+<p>Cliente MacOSX: <a href="http://mac.github.com/">http://mac.github.com/</a></p>
+</li>
+</ul>
+<p>Para Linux no hay cliente propio, pero sí hay plugin para la mayoría de editores de texto como atom, netbeans, eclipe o los editores de jetbrains.</p>
+<p>De todas maneras, estos clientes solo tienen el fin de facilitar el uso de Github, pero no son necesarios para usarlo. Es perfectamente válido usar el cliente de consola de Git o cualquier otro cliente genérico para Git. Uno de los más usados actualmente es <a href="https://www.gitkraken.com/">GitKraken</a>.</p>
+<h2 id="crear-un-repositorio">Crear un repositorio<a class="headerlink" href="#crear-un-repositorio" title="Permanent link">&para;</a></h2>
+<p>Vamos a crear un repositorio donde guardar nuestro proyecto. Para ello pulsamos el signo <code>+</code> que hay en la barra superior y seleccionamos <code>New repository</code>.</p>
+<p>Ahora tenemos que designar un nombre para nuestro repositorio, por ejemplo: '<em>taller-de-git</em>'.</p>
+<p><img alt="Nuevo repositorio" src="../images/github-newrepo.png" /></p>
+<p>Nada más crear el repositorio nos saldrá una pantalla con instrucciones precisas de como proceder a continuación.</p>
+<p>Básicamente podemos partir de tres situaciones:</p>
+<ol>
+<li>Todavía no hemos creado ningún repositorio en nuestro equipo.</li>
+<li>Ya tenemos un repositorio creado y queremos sincronizarlo con Github.</li>
+<li>Queremos importar un repositorio de otro sistema de control de versiones distinto.</li>
+</ol>
+<p><img alt="Quick setup" src="../images/github-quicksetup.png" /></p>
+<p>Nuestra situación es la segunda, así que nos aseguramos de que hemos elegido SSH como protocolo. A continuación pulsamos el icono del portapapeles y ejecutamos las dos ordenes que nos indica la web en nuestro terminal.</p>
+<div class="codehilite"><pre><span></span>$ git remote add origin git@github.com:sgomez/taller-de-git.git
+$ git push -u origin master
+Counting objects: 33, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (24/24), done.
+Writing objects: 100% (33/33), 3.35 KiB | 1.12 MiB/s, done.
+Total 33 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:sgomez/taller-de-git.git
+ * [new branch]      master -&gt; master
+Branch master set up to track remote branch master from origin by rebasing.
+</pre></div>
+
+
+<p>Si recargamos la página veremos que ya aparece nuestro proyecto.</p>
+<p><img alt="Github: código" src="../images/github-code.png" /></p>
+<h2 id="clonar-un-repositorio">Clonar un repositorio<a class="headerlink" href="#clonar-un-repositorio" title="Permanent link">&para;</a></h2>
+<p>Una vez que ya tengamos sincronizado el repositorio contra Github, eventualmente
+vamos a querer descargarlo en otro de nuestros ordenadores para poder trabajar
+en él. Esta acción se denomina clonar y para ello usaremos la orden <code>git clone</code>.</p>
+<p>En la página principal de nuestro proyecto podemos ver un botón que indica <code>Clone or download</code>.
+Si la pulsamos nos da, de nuevo, la opción de elegir entre clonar con <em>ssh</em> o <em>https</em>.
+Recordad que si estáis en otro equipo y queréis seguir utilizando ssh deberéis
+generar otra para de claves privada/pública como hicimos en la sección de
+<em><a href="../curso-de-git/git/#tu-clave-publicaprivada">Aspectos básicos de Git</a></em> y instalarla
+en nuestro perfil de Github, como vimos anteriormente.</p>
+<p>Para clonar nuestro repositorio y poder trabajar con él todo lo que debemos hacer es
+lo siguiente:</p>
+<div class="codehilite"><pre><span></span>$ git clone git@github.com:sgomez/taller-de-git.git
+$ cd taller-de-git
+</pre></div>
+
+
+<h2 id="ramas-remotas">Ramas remotas<a class="headerlink" href="#ramas-remotas" title="Permanent link">&para;</a></h2>
+<p>Si ahora vemos el estado de nuestro proyecto veremos algo similar a esto:</p>
+<div class="codehilite"><pre><span></span>$ git hist --all
+* 2eab8ca 2013-06-16 | Aplicando los cambios de la rama hola (HEAD -&gt; master, origin/master) [Sergio Gomez]
+*\
+| * 9862f33 2013-06-16 | hola usa la clase HolaMundo (hola) [Sergio Gómez]
+| * 6932156 2013-06-16 | Añadida la clase HolaMundo [Sergio Gómez]
+|/
+* 9c85275 2013-06-16 | Programa interactivo (master) [Sergio Gómez]
+* c3e65d0 2013-06-16 | Añadido README.md [Sergio Gómez]
+* 81c6e93 2013-06-16 | Movido hola.php a lib [Sergio Gómez]
+* 96a39df 2013-06-16 | Añadido el autor del programa y su email [Sergio Gómez]
+* fd4da94 2013-06-16 | Se añade un comentario al cambio del valor por defecto (tag: v1) [Sergio Gómez]
+* 3283e0d 2013-06-16 | Se añade un parámetro por defecto (tag: v1-beta) [Sergio Gómez]
+* efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
+* e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
+</pre></div>
+
+
+<p>Aparece que hay una nueva rama llamada <code>origin/master</code>. Esta rama indica el estado de sincronización
+de nuestro repositorio con un repositorio remoto llamado <em>origin</em>. En este caso el de <em>Github</em>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Por norma se llama automáticamente <em>origin</em> al primer repositorio con el que
+sincronizamos nuestro repositorio.</p>
+</div>
+<p>Podemos ver la configuración de este repositorio remoto con la orden <code>git remote</code>:</p>
+<div class="codehilite"><pre><span></span>$ git remote show origin
+* remote origin
+  Fetch URL: git@github.com:sgomez/taller-de-git.git
+  Push  URL: git@github.com:sgomez/taller-de-git.git
+  HEAD branch: master
+  Remote branch:
+    master tracked
+  Local ref configured for &#39;git push&#39;:
+    master pushes to master (up to date)
+</pre></div>
+
+
+<p>De la respuesta tenemos que fijarnos en las líneas que indican <em>fetch</em> y <em>push</em>
+puesto que son las acciones de sincronización de nuestro repositorio con el remoto.
+Mientras que <em>fetch</em> se encarga de traer los cambios desde el repositorio remoto
+al nuestro, <em>push</em> los envía.</p>
+<h2 id="enviando-actualizaciones">Enviando actualizaciones<a class="headerlink" href="#enviando-actualizaciones" title="Permanent link">&para;</a></h2>
+<p>Vamos a añadir una licencia a nuestra aplicación. Creamos un fichero LICENSE con el siguiente contenido:</p>
+<div class="codehilite"><pre><span></span>MIT License
+
+Copyright (c) [year] [fullname]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the &quot;Software&quot;), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre></div>
+
+
+<p>Y añadidos y confirmamos los cambios:</p>
+<div class="codehilite"><pre><span></span>$ git add LICENSE
+$ git commit -m &quot;Añadida licencia&quot;
+[master 3f5cb1c] Añadida licencia
+ 1 file changed, 21 insertions(+)
+ create mode 100644 LICENSE
+$ git hist --all
+* 3f5cb1c 2013-06-16 | Añadida licencia (HEAD -&gt; master) [Sergio Gómez]
+* 2eab8ca 2013-06-16 | Aplicando los cambios de la rama hola (origin/master) [Sergio Gomez]
+*\
+| * 9862f33 2013-06-16 | hola usa la clase HolaMundo (hola) [Sergio Gómez]
+| * 6932156 2013-06-16 | Añadida la clase HolaMundo [Sergio Gómez]
+|/
+* 9c85275 2013-06-16 | Programa interactivo (master) [Sergio Gómez]
+* c3e65d0 2013-06-16 | Añadido README.md [Sergio Gómez]
+* 81c6e93 2013-06-16 | Movido hola.php a lib [Sergio Gómez]
+* 96a39df 2013-06-16 | Añadido el autor del programa y su email [Sergio Gómez]
+* fd4da94 2013-06-16 | Se añade un comentario al cambio del valor por defecto (tag: v1) [Sergio Gómez]
+* 3283e0d 2013-06-16 | Se añade un parámetro por defecto (tag: v1-beta) [Sergio Gómez]
+* efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
+* e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
+</pre></div>
+
+
+<p>Viendo la historia podemos ver como nuestro master no está en el mismo punto que
+<code>origin/master</code>. Si vamos a la web de <em>Github</em> veremos que <code>LICENSE</code> no aparece aún.
+Así que vamos a enviar los cambios con la primera de las acciones que vimos <code>git push</code>:</p>
+<div class="codehilite"><pre><span></span>$ git push -u origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 941 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To git@github.com:sgomez/taller-de-git.git
+   2eab8ca..3f5cb1c  master -&gt; master
+Branch master set up to track remote branch master from origin.
+</pre></div>
+
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>La orden <code>git push</code> necesita dos parámetros para funcionar: el repositorio
+y la rama destino. Así que realmente lo que teníamos que haber escrito es:</p>
+<div class="codehilite"><pre><span></span>$ git push origin master
+</pre></div>
+
+
+<p>Para ahorrar tiempo escribiendo <em>git</em> nos deja vincular nuestra rama local
+con una rama remota, de tal manera que no tengamos que estar siempre indicándolo.
+Eso es posible con el parámetro <code>--set-upstream</code> o <code>-u</code> en forma abreviada.</p>
+<div class="codehilite"><pre><span></span>$ git push -u origin master
+</pre></div>
+
+
+<p>Si repasas las órdenes que te indicó Github que ejecutaras verás que el parámetro
+<code>-u</code> estaba presente y por eso no ha sido necesario indicar ningún parámetro
+al hacer push.</p>
+</div>
+<h2 id="recibiendo-actualizaciones">Recibiendo actualizaciones<a class="headerlink" href="#recibiendo-actualizaciones" title="Permanent link">&para;</a></h2>
+<p>Si trabajamos con más personas, o trabajamos desde dos ordenadores distintos, nos encontraremos
+con que nuestro repositorio local es más antiguo que el remoto. Necesitamos descargar
+los cambios para poder incorporarlos a nuestro directorio de trabajo.</p>
+<p>Para la prueba, Github nos permite editar archivos directamente desde la web. Pulsamos sobre
+el archivo <code>README.md</code>. En la vista del archivo, veremos que aparece el icono de un lápiz.
+Esto nos permite editar el archivo.</p>
+<p><img alt="Editar archivo" src="../images/github-edit.png" /></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Los archivos con extensión <code>.md</code> están en un formato denominado <em>MarkDown</em>. Se trata
+de un lenguaje de marca que nos permite escribir texto enriquecido de manera muy sencilla.</p>
+<p>Dispones de un tutorial aquí: <a href="https://www.markdowntutorial.com/">https://www.markdowntutorial.com/</a></p>
+</div>
+<p>Modificamos el archivo como queramos, por ejemplo, añadiendo nuestro nombre:</p>
+<div class="codehilite"><pre><span></span># Curso de GIT
+
+Este proyecto contiene el curso de introducción a GIT
+
+Desarrollado por Sergio Gómez.
+</pre></div>
+
+
+<p><img alt="Confirmar cambios" src="../images/github-changes.png" /></p>
+<p>El cambio quedará incorporado al repositorio de Github, pero no al nuestro. Necesitamos
+traer la información desde el servidor remoto. La orden asociada es <code>git fetch</code>:</p>
+<div class="codehilite"><pre><span></span>$ git fetch
+$ git hist --all
+* cbaf831 2013-06-16 | Actualizado README.md (origin/master) [Sergio Gómez]
+* 3f5cb1c 2013-06-16 | Añadida licencia (HEAD -&gt; master) [Sergio Gómez]
+* 2eab8ca 2013-06-16 | Aplicando los cambios de la rama hola [Sergio Gomez]
+*\
+| * 9862f33 2013-06-16 | hola usa la clase HolaMundo (hola) [Sergio Gómez]
+| * 6932156 2013-06-16 | Añadida la clase HolaMundo [Sergio Gómez]
+|/
+* 9c85275 2013-06-16 | Programa interactivo (master) [Sergio Gómez]
+* c3e65d0 2013-06-16 | Añadido README.md [Sergio Gómez]
+* 81c6e93 2013-06-16 | Movido hola.php a lib [Sergio Gómez]
+* 96a39df 2013-06-16 | Añadido el autor del programa y su email [Sergio Gómez]
+* fd4da94 2013-06-16 | Se añade un comentario al cambio del valor por defecto (tag: v1) [Sergio Gómez]
+* 3283e0d 2013-06-16 | Se añade un parámetro por defecto (tag: v1-beta) [Sergio Gómez]
+* efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
+* e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
+</pre></div>
+
+
+<p>Ahora vemos el caso contrario, tenemos que <code>origin/master</code> está por delante que <code>HEAD</code> y
+que la rama <code>master</code> local.</p>
+<p>Ahora necesitamos incorporar los cambios de la rama remota en la local. La forma de hacerlo
+lo vimos en el <a href="../ramas/#mezclar-ramas">capítulo anterior</a> usando <code>git merge</code> o <code>git rebase</code>.</p>
+<p>Habitualmente se usa <code>git merge</code>:</p>
+<div class="codehilite"><pre><span></span>$ git merge origin/master
+Updating 3f5cb1c..cbaf831
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+$ git hist --all
+* cbaf831 2013-06-16 | Actualizado README.md (HEAD -&gt; master, origin/master) [Sergio Gómez]
+* 3f5cb1c 2013-06-16 | Añadida licencia [Sergio Gómez]
+* 2eab8ca 2013-06-16 | Aplicando los cambios de la rama hola [Sergio Gomez]
+*\
+| * 9862f33 2013-06-16 | hola usa la clase HolaMundo (hola) [Sergio Gómez]
+| * 6932156 2013-06-16 | Añadida la clase HolaMundo [Sergio Gómez]
+|/
+* 9c85275 2013-06-16 | Programa interactivo (master) [Sergio Gómez]
+* c3e65d0 2013-06-16 | Añadido README.md [Sergio Gómez]
+* 81c6e93 2013-06-16 | Movido hola.php a lib [Sergio Gómez]
+* 96a39df 2013-06-16 | Añadido el autor del programa y su email [Sergio Gómez]
+* fd4da94 2013-06-16 | Se añade un comentario al cambio del valor por defecto (tag: v1) [Sergio Gómez]
+* 3283e0d 2013-06-16 | Se añade un parámetro por defecto (tag: v1-beta) [Sergio Gómez]
+* efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
+* e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
+</pre></div>
+
+
+<p>Como las operaciones de traer cambios (<code>git fetch</code>) y de mezclar ramas (<code>git merge</code> o <code>git rebase</code>)
+están muy asociadas, <em>git</em> nos ofrece una posibilidad para ahorrar pasos que es la orden <code>git push</code>
+que realiza las dos acciones simultáneamente.</p>
+<p>Para probar, vamos a editar de nuevo el archivo README.md y añadimos algo más:</p>
+<div class="codehilite"><pre><span></span># Curso de GIT
+
+Este proyecto contiene el curso de introducción a GIT del Aula de Software Libre.
+
+Desarrollado por Sergio Gómez.
+</pre></div>
+
+
+<p>Como mensaje del <em>commit</em>: <em>'Indicado que se realiza en el ASL'</em>.</p>
+<p>Y ahora probamos a actualizar con <code>git pull</code>:</p>
+<div class="codehilite"><pre><span></span>$ git pull
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:sgomez/taller-de-git
+   cbaf831..d8922e4  master     -&gt; origin/master
+First, rewinding head to replay your work on top of it...
+Fast-forwarded master to d8922e4ffa4f87553b03e77df6196b7e496bfec4.
+$ git hist --all
+* d8922e4 2013-06-16 | Indicado que se realiza en el ASL (HEAD -&gt; master, origin/master) [Sergio Gómez]
+* cbaf831 2013-06-16 | Actualizado README.md [Sergio Gómez]
+* 3f5cb1c 2013-06-16 | Añadida licencia [Sergio Gómez]
+* 2eab8ca 2013-06-16 | Aplicando los cambios de la rama hola [Sergio Gomez]
+*\
+| * 9862f33 2013-06-16 | hola usa la clase HolaMundo (hola) [Sergio Gómez]
+| * 6932156 2013-06-16 | Añadida la clase HolaMundo [Sergio Gómez]
+|/
+* 9c85275 2013-06-16 | Programa interactivo (master) [Sergio Gómez]
+* c3e65d0 2013-06-16 | Añadido README.md [Sergio Gómez]
+* 81c6e93 2013-06-16 | Movido hola.php a lib [Sergio Gómez]
+* 96a39df 2013-06-16 | Añadido el autor del programa y su email [Sergio Gómez]
+* fd4da94 2013-06-16 | Se añade un comentario al cambio del valor por defecto (tag: v1) [Sergio Gómez]
+* 3283e0d 2013-06-16 | Se añade un parámetro por defecto (tag: v1-beta) [Sergio Gómez]
+* efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
+* e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
+</pre></div>
+
+
+<p>Vemos que los cambios se han incorporado y que las ramas remota y local de <em>master</em> están
+sincronizadas.</p>
+<h2 id="problemas-de-sincronizacion">Problemas de sincronización<a class="headerlink" href="#problemas-de-sincronizacion" title="Permanent link">&para;</a></h2>
+<h3 id="no-puedo-hacer-push">No puedo hacer push<a class="headerlink" href="#no-puedo-hacer-push" title="Permanent link">&para;</a></h3>
+<p>Al intentar subir cambios nos podemos encontrar un mensaje como este:</p>
+<div class="codehilite"><pre><span></span>$ git push
+git push
+To git@github.com:sgomez/taller-de-git.git
+ ! [rejected]        master -&gt; master (fetch first)
+error: failed to push some refs to &#39;git@github.com:sgomez/taller-de-git.git&#39;
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., &#39;git pull ...&#39;) before pushing again.
+hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; for details.
+</pre></div>
+
+
+<p>La causa es que el repositorio remoto también se ha actualizado y nosotros aún
+no hemos recibido esos cambios. Es decir, ambos repositorios se han actualizado
+y el remoto tiene preferencia. Hay un conflicto en ciernes y se debe resolver
+localmente antes de continuar.</p>
+<p>La forma de proceder en este caso es hacer un <code>git fetch</code> y un <code>git rebase</code>. Si
+hay conflictos deberán resolverse. Cuando esté todo solucionado ya podremos hacer
+<code>git push</code>.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Por defecto <code>git pull</code> lo que hace es un <code>git merge</code>, si queremos hacer
+<code>git rebase</code> deberemos especificarlos con el parámetro <code>-r</code>:</p>
+<div class="codehilite"><pre><span></span>$ git pull -r
+</pre></div>
+
+
+</div>
+<h3 id="no-puedo-hacer-pull">No puedo hacer pull<a class="headerlink" href="#no-puedo-hacer-pull" title="Permanent link">&para;</a></h3>
+<p>Al intentar descargar cambios nos podemos encontrar un mensaje como este:</p>
+<div class="codehilite"><pre><span></span>$ git pull
+error: Cannot pull with rebase: You have unstaged changes.
+</pre></div>
+
+
+<p>O como este:</p>
+<div class="codehilite"><pre><span></span>$ git pull
+error: Cannot pull with rebase: Your index contains uncommitted changes.
+</pre></div>
+
+
+<p>Básicamente lo que ocurre es que tenemos cambios sin confirmar en nuestro espacio
+de trabajo. Una opción es confirmar (<em>commit</em>) y entonces proceder como el caso anterior.</p>
+<p>Pero puede ocurrir que aún estemos trabajando todavía y no nos interese confirmar
+los cambios, solo queremos sincronizar y seguir trabajando. Para casos como estos
+<em>git</em> ofrece una pila para guardar cambios temporalmente. Esta pila se llama <em>stash</em>
+y nos permite restaurar el espacio de trabajo al último commit.</p>
+<p>La forma de proceder es la siguiente:</p>
+<div class="codehilite"><pre><span></span>$ git stash save # Guardamos los cambios en la pila
+$ git pull # Sincronizamos con el repositorio remoto
+$ git stash pop # Sacamos los cambios de la pila
+</pre></div>
+
+
+<p>Podría darse el caso de que al sacar los cambios de la pila hubiera algún
+conflicto. En ese caso actuamos como con el caso de <em>merge</em> o <em>rebase</em>.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../ramas/" title="Ramas" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Anterior
+                </span>
+                Ramas
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../github-avanzado/" title="Github avanzado" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Siguiente
+                </span>
+                Github avanzado
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/aulasoftwarelibre" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/aulasl" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://facebook.com/aulasl" class="md-footer-social__link fa fa-facebook"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.30f6b8b1.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"0.17.5",url:{base:".."}})</script>
+      
+    
+    
+      
+        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-51754922-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      
+    
+  </body>
+</html>
