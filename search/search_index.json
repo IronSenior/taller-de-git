@@ -2,13 +2,23 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Taller de introducci\u00f3n a Git\n\n\n\n\nEste taller forma parte de las actividades del \nAula de Software Libre de la\nUniversidad de C\u00f3rdoba\n.\n\n\nEl contenido del mismo es en parte de producci\u00f3n propia, en parte de otros\nmanuales libres que pueden encontrarse en la secci\u00f3n de \nReferencias\n.\n\n\n\n\nContenido\n\n\n\n\n\n\nInicio\n\n\nSistemas de control de versiones\n\n\nIntroducci\u00f3n a Git\n\n\nAspectos b\u00e1sicos de Git\n\n\nUso b\u00e1sico\n\n\nUso avanzado\n\n\nRamas\n\n\nAdministraci\u00f3n de repositorios\n\n\nFlujo de trabajo con Git (git flow)\n\n\nGithub\n\n\nReferencias", 
+            "text": "Taller de introducci\u00f3n a Git\n\n\n\n\nEste taller forma parte de las actividades del \nAula de Software Libre de la\nUniversidad de C\u00f3rdoba\n.\n\n\nEl contenido del mismo es en parte de producci\u00f3n propia, en parte de otros\nmanuales libres que pueden encontrarse en la secci\u00f3n de \nReferencias\n.\n\n\nContenido\n\n\n\n\nInicio\n\n\nSistemas de control de versiones\n\n\nIntroducci\u00f3n a Git\n\n\nAspectos b\u00e1sicos de Git\n\n\nUso b\u00e1sico\n\n\nUso avanzado\n\n\nRamas\n\n\nAdministraci\u00f3n de repositorios\n\n\nFlujo de trabajo con Git (git flow)\n\n\nGithub\n\n\nReferencias\n\n\n\n\nAgradecimientos\n\n\nEste curso ha sido impartido por las siguientes personas:\n\n\n\n\nH\u00e9ctor Romero\n\n\nJos\u00e9 M\u00e1rquez\n\n\nSergio G\u00f3mez", 
             "title": "Inicio"
         }, 
         {
             "location": "/#taller-de-introduccion-a-git", 
-            "text": "Este taller forma parte de las actividades del  Aula de Software Libre de la\nUniversidad de C\u00f3rdoba .  El contenido del mismo es en parte de producci\u00f3n propia, en parte de otros\nmanuales libres que pueden encontrarse en la secci\u00f3n de  Referencias .   Contenido    Inicio  Sistemas de control de versiones  Introducci\u00f3n a Git  Aspectos b\u00e1sicos de Git  Uso b\u00e1sico  Uso avanzado  Ramas  Administraci\u00f3n de repositorios  Flujo de trabajo con Git (git flow)  Github  Referencias", 
+            "text": "Este taller forma parte de las actividades del  Aula de Software Libre de la\nUniversidad de C\u00f3rdoba .  El contenido del mismo es en parte de producci\u00f3n propia, en parte de otros\nmanuales libres que pueden encontrarse en la secci\u00f3n de  Referencias .", 
             "title": "Taller de introducci\u00f3n a Git"
+        }, 
+        {
+            "location": "/#contenido", 
+            "text": "Inicio  Sistemas de control de versiones  Introducci\u00f3n a Git  Aspectos b\u00e1sicos de Git  Uso b\u00e1sico  Uso avanzado  Ramas  Administraci\u00f3n de repositorios  Flujo de trabajo con Git (git flow)  Github  Referencias", 
+            "title": "Contenido"
+        }, 
+        {
+            "location": "/#agradecimientos", 
+            "text": "Este curso ha sido impartido por las siguientes personas:   H\u00e9ctor Romero  Jos\u00e9 M\u00e1rquez  Sergio G\u00f3mez", 
+            "title": "Agradecimientos"
         }, 
         {
             "location": "/cvs/", 
