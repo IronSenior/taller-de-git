@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -35,8 +35,8 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.4">
+      <link rel="shortcut icon" href="../images/logoasl.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
@@ -44,23 +44,52 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+    
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-51754922-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -71,24 +100,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -117,22 +129,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Taller de Git
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              Taller de Git
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Github avanzado
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -155,7 +166,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -166,20 +176,18 @@
 
   
 
-
-  <a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      aulasoftwarelibre/taller-de-git
+<a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    aulasoftwarelibre/taller-de-git
+  </div>
+</a>
           </div>
         </div>
       
@@ -192,7 +200,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -215,20 +223,18 @@
 
   
 
-
-  <a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      aulasoftwarelibre/taller-de-git
+<a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    aulasoftwarelibre/taller-de-git
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -362,7 +368,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#clonar-un-repositorio" title="Clonar un repositorio" class="md-nav__link">
+  <a href="#clonar-un-repositorio" class="md-nav__link">
     Clonar un repositorio
   </a>
   
@@ -370,21 +376,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sincronizar-con-el-repositorio-original" title="Sincronizar con el repositorio original" class="md-nav__link">
+  <a href="#sincronizar-con-el-repositorio-original" class="md-nav__link">
     Sincronizar con el repositorio original
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#creando-nuevas-funcionalidades" title="Creando nuevas funcionalidades" class="md-nav__link">
+  <a href="#creando-nuevas-funcionalidades" class="md-nav__link">
     Creando nuevas funcionalidades
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#todo-esto-es-algo-complicado" title="Todo esto es algo complicado..." class="md-nav__link">
+  <a href="#todo-esto-es-algo-complicado" class="md-nav__link">
     Todo esto es algo complicado...
   </a>
   
@@ -396,7 +402,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ultimo-paso-documentacion" title="Último paso, documentación." class="md-nav__link">
+  <a href="#ultimo-paso-documentacion" class="md-nav__link">
     Último paso, documentación.
   </a>
   
@@ -458,7 +464,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#clonar-un-repositorio" title="Clonar un repositorio" class="md-nav__link">
+  <a href="#clonar-un-repositorio" class="md-nav__link">
     Clonar un repositorio
   </a>
   
@@ -466,21 +472,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#sincronizar-con-el-repositorio-original" title="Sincronizar con el repositorio original" class="md-nav__link">
+  <a href="#sincronizar-con-el-repositorio-original" class="md-nav__link">
     Sincronizar con el repositorio original
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#creando-nuevas-funcionalidades" title="Creando nuevas funcionalidades" class="md-nav__link">
+  <a href="#creando-nuevas-funcionalidades" class="md-nav__link">
     Creando nuevas funcionalidades
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#todo-esto-es-algo-complicado" title="Todo esto es algo complicado..." class="md-nav__link">
+  <a href="#todo-esto-es-algo-complicado" class="md-nav__link">
     Todo esto es algo complicado...
   </a>
   
@@ -492,7 +498,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ultimo-paso-documentacion" title="Último paso, documentación." class="md-nav__link">
+  <a href="#ultimo-paso-documentacion" class="md-nav__link">
     Último paso, documentación.
   </a>
   
@@ -531,12 +537,15 @@
 </ul>
 <p><img alt="Espacio de trabajo" src="../images/github-main.png" /></p>
 <p>Github nos permite clonar localmente un proyecto por tres vías: HTTPS, SSH y Subversion. Seleccionamos SSH y copiamos el texto que después añadiremos a la orden <code>git clone</code> como en la primera línea del siguiente grupo de órdenes:</p>
-<div class="codehilite"><pre><span></span>$ git clone git@github.com:miusuario/miniblog.git
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git clone git@github.com:miusuario/miniblog.git
 $ cd miniblog
 $ composer.phar install
 $ php console create-schema
 </pre></div>
-
+</td></tr></table>
 
 <p>Lo que hace el código anterior es:</p>
 <ol>
@@ -546,9 +555,9 @@ $ php console create-schema
 <li>Arrancamos un servidor web para pruebas</li>
 </ol>
 <p>Y probamos que nuestra aplicación funciona:</p>
-<div class="codehilite"><pre><span></span>$ php -S localhost:9999 -t web/
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ php -S localhost:9999 -t web/
 </pre></div>
-
+</td></tr></table>
 
 <p>Podemos usar dos direcciones para probarla:</p>
 <ul>
@@ -557,7 +566,20 @@ $ php console create-schema
 </ul>
 <h3 id="sincronizar-con-el-repositorio-original">Sincronizar con el repositorio original<a class="headerlink" href="#sincronizar-con-el-repositorio-original" title="Permanent link">&para;</a></h3>
 <p>Cuando clonamos un repositorio de otro usuario hacemos una copia del original. Pero esa copia es igual al momento en el que hicimos la copia. Cuando el repositorio original cambie, que lo hará, nuestro repositorio no se actualizará solo. ¡Son dos repositorios diferentes! Necesitamos una manera de poder incorporar los cambios que vaya teniendo el repositorio original en el nuestro. Para eso crearemos una nueva rama remota. Por convenio, y como vimos anteriormente, ya existe una rama remota llamada <em>origin</em> que apunta al repositorio de donde clonamos el proyecto, en este caso apunta a nuestro fork en github:</p>
-<div class="codehilite"><pre><span></span>$ git remote show origin
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git remote show origin
 * remote origin
   Fetch URL: git@github.com:miusuario/miniblog.git
   Push  URL: git@github.com:miusuario/miniblog.git
@@ -572,10 +594,20 @@ $ php console create-schema
   Local ref configured for &#39;git push&#39;:
     master pushes to master (up to date)
 </pre></div>
-
+</td></tr></table>
 
 <p>También por convenio, la rama remota que hace referencia al repositorio original se llama <em>upstream</em> y se crea de la siguiente manera:</p>
-<div class="codehilite"><pre><span></span>$ git remote add upstream git@github.com:sgomez/miniblog.git
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git remote add upstream git@github.com:sgomez/miniblog.git
 $ git remote show upstream
 * remote upstream
   Fetch URL: git@github.com:sgomez/miniblog.git
@@ -587,34 +619,44 @@ $ git remote show upstream
   Local ref configured for &#39;git push&#39;:
     master pushes to master (local out of date)
 </pre></div>
-
+</td></tr></table>
 
 <p>En este caso, la URI debe ser siempre la del proyecto original. Y ahora para incorporar actualizaciones, usaremos el merge en dos pasos:</p>
-<div class="codehilite"><pre><span></span>$ git fetch upstream
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git fetch upstream
 $ git merge upstream/master
 </pre></div>
-
+</td></tr></table>
 
 <p>Recordemos que <em>fetch</em> solo trae los cambios que existan en el repositorio remoto sin hacer ningún cambio en nuestro repositorio. Es la orden <em>merge</em> la que se encarga de que todo esté sincronizado. En este caso decimos que queremos fusionar con la rama <em>master</em> que está en el repositorio <em>upstream</em>.</p>
 <h3 id="creando-nuevas-funcionalidades">Creando nuevas funcionalidades<a class="headerlink" href="#creando-nuevas-funcionalidades" title="Permanent link">&para;</a></h3>
 <p>Vamos a crear una nueva funcionalidad: vamos a añadir una licencia de uso. Para ello preferentemente crearemos una nueva rama.</p>
-<div class="codehilite"><pre><span></span>$ git checkout -b add-license
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout -b add-license
 $ echo &quot;LICENCIA MIT&quot; &gt; LICESE
 # el error es intencionado
 $ git add LICESE
 $ git commit -m &quot;Archivo de licencia de uso&quot;
 </pre></div>
-
+</td></tr></table>
 
 <p>En principio habría que probar que todo funciona bien y entonces integraremos en la rama <em>master</em> de nuestro repositorio y enviamos los cambios a Github:</p>
-<div class="codehilite"><pre><span></span>$ git checkout master
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout master
 $ git merge add-license --no-ff
 $ git branch -d add-license
 # Borramos la rama que ya no nos sirve para nada
 $ git push --set-upstream origin add-license
 # Enviamos la rama a nuestro repositorio origin
 </pre></div>
-
+</td></tr></table>
 
 <p>Si volvemos a Github, veremos que nos avisa de que hemos subido una nueva rama y si queremos crear un pull request.</p>
 <p><img alt="Aviso de nueva rama" src="../images/github-pushed.png" /></p>
@@ -623,22 +665,28 @@ $ git push --set-upstream origin add-license
 <p>Una vez hemos terminado y nos aseguramos que todo está correcto, pulsamos <em>Send pull request</em> y le llegará nuestra petición al dueño del proyecto.</p>
 <p><img alt="Gestión de un _Pull Request_" src="../images/github-pullrequest.png" /></p>
 <p>Sin embargo, para esta prueba, no vamos a cambiar el nombre del archivo y dejaremos el error como está. Así de esta manera al administrador del proyecto le llegará el <em>Pull Request</em> y la lista de cambios. Ahora en principio, cabría esperar que el administrador aprobara los cambios, pero podría pasar que nos indicara que cambiemos algo. En ese caso solo habría que modificar la rama y volverla a enviar.</p>
-<div class="codehilite"><pre><span></span>$ git mv LICESE LICENSE
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git mv LICESE LICENSE
 $ git commit -m &quot;Fix: Nombre de archivo LICENSE&quot;
 $ git push
 </pre></div>
-
+</td></tr></table>
 
 <p>Ahora sí, el administrador puede aprobar la fusión y borrar la rama del repositorio. El panel de Github permite aceptar los cambios directamente o informa de como hacer una copia de la rama ofrecida por el usuario para hacer cambios, como puede verse en la siguiente imagen.</p>
 <p><img alt="Conversación en un _Pull Request_" src="../images/github-pullconversation.png" /></p>
 <p>Una vez que se han aceptado los cambios, podemos borrar la rama y actualizar nuestro repositorio con los datos del remoto como hicimos antes. ¿Por qué actualizar desde el remoto y no desde nuetra rama <em>add-license</em>? Pues porque usualmente el administrador puede haber modificado los cambios que le hemos propuesto, o incluso una tercera persona. Recordemos el cariz colaborativo que tiene Github.</p>
-<div class="codehilite"><pre><span></span>$ git checkout master
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout master
 $ git branch -d add-license
 # Esto borra la rama local
 $ git push origin --delete add-license
 # Esto borra la rama remota. También puede hacerse desde la web.
 </pre></div>
-
+</td></tr></table>
 
 <h3 id="todo-esto-es-algo-complicado">Todo esto es algo complicado...<a class="headerlink" href="#todo-esto-es-algo-complicado" title="Permanent link">&para;</a></h3>
 <p>Sí, lo es, al menos al principio. Git tiene una parte muy sencilla que es el uso del repositorio local (órdenes tales como add, rm, mv y commit). El siguiente nivel de complejidad lo componen las órdenes para trabajar con ramas y fusionarlas (checkout, branch, merge, rebase) y por último, las que trabajan con repositorios remotos (pull, push, fetch, remote). Además hay otra serie de órdenes para tener información (diff, log, status) o hacer operaciones de mantenimiento (fsck, gc). Lo importante para no perderse en Git, es seguir la siguiente máxima:</p>
@@ -651,6 +699,7 @@ $ git push origin --delete add-license
 <p>Sin embargo, para los curiosos dejamos como referencia la web de <a href="http://easybook-project.org/">Easybook</a>. Este proyecto, que se encuentra también en Github, permite crear documentos en PDF, HTML o ePub a partir de documentos escritos en Markdown. Este manual, por ejemplo, ha sido escrito en Markdown y pasado a PDF con Easybook.</p>
                 
                   
+                
                 
               
               
@@ -712,7 +761,6 @@ $ git push origin --delete add-license
           Material for MkDocs</a>
       </div>
       
-        
   <div class="md-footer-social">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
@@ -722,16 +770,17 @@ $ git push origin --delete add-license
     
       <a href="https://facebook.com/aulasl" class="md-footer-social__link fa fa-facebook"></a>
     
+      <a href="https://instagram.com/aulasoftwarelibre" class="md-footer-social__link fa fa-instagram"></a>
+    
   </div>
 
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.30f6b8b1.js"></script>
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
       
         
         
@@ -748,12 +797,7 @@ $ git push origin --delete add-license
           
         
       
-      <script>app.initialize({version:"0.17.5",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-51754922-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>

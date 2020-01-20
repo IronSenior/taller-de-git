@@ -1,0 +1,914 @@
+
+
+
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Curso básico de git">
+      
+      
+      
+        <meta name="author" content="Sergio Gómez <sergio@uco.es>">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copiar al portapapeles">
+      
+        <meta name="lang:clipboard.copied" content="Copiado al portapapeles">
+      
+        <meta name="lang:search.language" content="es">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No se encontraron documentos">
+      
+        <meta name="lang:search.result.one" content="1 documento encontrado">
+      
+        <meta name="lang:search.result.other" content="# documentos encontrados">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../images/logoasl.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Administración de repositorios - Taller de Git</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-51754922-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#administracion-de-repositorios" tabindex="1" class="md-skip">
+        Saltar a contenido
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="Taller de Git" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Taller de Git
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Administración de repositorios
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Teclee para comenzar búsqueda
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    aulasoftwarelibre/taller-de-git
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="Taller de Git" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Taller de Git
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    aulasoftwarelibre/taller-de-git
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Inicio" class="md-nav__link">
+      Inicio
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cvs/" title="Sistemas de control de versiones" class="md-nav__link">
+      Sistemas de control de versiones
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../introduccion/" title="Introducción a Git" class="md-nav__link">
+      Introducción a Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../git/" title="Aspectos básicos de Git" class="md-nav__link">
+      Aspectos básicos de Git
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../usobasico/" title="Uso básico" class="md-nav__link">
+      Uso básico
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../usoavanzado/" title="Uso avanzado" class="md-nav__link">
+      Uso avanzado
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../ramas/" title="Ramas" class="md-nav__link">
+      Ramas
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../github/" title="Github" class="md-nav__link">
+      Github
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../github-avanzado/" title="Github avanzado" class="md-nav__link">
+      Github avanzado
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../gitflow/" title="Flujo de trabajo con Git (git flow)" class="md-nav__link">
+      Flujo de trabajo con Git (git flow)
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../referencias/" title="Referencias" class="md-nav__link">
+      Referencias
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#trabajando-con-otros-repositorios" class="md-nav__link">
+    Trabajando con otros repositorios
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#clonar-un-repositorio" class="md-nav__link">
+    Clonar un repositorio
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ramas-remotas" class="md-nav__link">
+    Ramas remotas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-actualizar-el-repositorio-copia" class="md-nav__link">
+    Cómo actualizar el repositorio copia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anadir-una-rama-de-seguimiento" class="md-nav__link">
+    Añadir una rama de seguimiento
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#borrar-ramas-remotas" class="md-nav__link">
+    Borrar ramas remotas
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repositorios-basicos" class="md-nav__link">
+    Repositorios básicos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacion" class="md-nav__link">
+    Creación
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anadir-un-repositorio-remoto" class="md-nav__link">
+    Añadir un repositorio remoto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subir-cambios" class="md-nav__link">
+    Subir cambios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#actualizar-cambios-desde-repositorios-compartidos" class="md-nav__link">
+    Actualizar cambios desde repositorios compartidos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/aulasoftwarelibre/taller-de-git.git/edit/master/docs/repositorios.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="administracion-de-repositorios">Administración de repositorios<a class="headerlink" href="#administracion-de-repositorios" title="Permanent link">&para;</a></h1>
+<h2 id="trabajando-con-otros-repositorios">Trabajando con otros repositorios<a class="headerlink" href="#trabajando-con-otros-repositorios" title="Permanent link">&para;</a></h2>
+<h3 id="clonar-un-repositorio">Clonar un repositorio<a class="headerlink" href="#clonar-un-repositorio" title="Permanent link">&para;</a></h3>
+<p>Clonar es la acción de copiar el contenido de un repositorio para generar otra copia de trabajo. Se usa la orden <code>git clone</code>. Vamos a clonar nuestro respositorio de ejemplo en otro directorio:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cd ..
+$ git clone curso-git curso-git-clonado
+Cloning into &#39;curso-git-clonado&#39;...
+done.
+</pre></div>
+</td></tr></table>
+
+<p>Y comprobamos que el nuevo repositorio es igual que el que teníamos:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cd curso-git-clonado/
+$ ls
+README.md  lib
+$ git hist --all
+* 491f1d2 2013-06-16 | hola usa la clase HolaMundo (HEAD, origin/master, origin/hola, origin/HEAD, master) [Sergio Gómez]
+* c13d75c 2013-06-16 | Añadida la clase HolaMundo [Sergio Gómez]
+* c3e65d0 2013-06-16 | Añadido README.md [Sergio Gómez]
+* 81c6e93 2013-06-16 | Movido hola.php a lib [Sergio Gómez]
+* 96a39df 2013-06-16 | Añadido el autor del programa y su email [Sergio Gómez]
+* fd4da94 2013-06-16 | Se añade un comentario al cambio del valor por defecto (v1) [Sergio Gómez]
+* 3283e0d 2013-06-16 | Se añade un parámetro por defecto (v1-beta) [Sergio Gómez]
+* efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
+* e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
+</pre></div>
+</td></tr></table>
+
+<p>Bueno, no exactamente igual. Hay unas nuevas ramas llamadas <em>origin/*</em> que indican que están vinculadas con un repositorio externo. Podemos verlas con la orden <code>git remote</code>:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git remote show origin
+* remote origin
+  Fetch URL: /home/cc0gobas/git/curso-git
+  Push  URL: /home/cc0gobas/git/curso-git
+  HEAD branch (remote HEAD is ambiguous, may be one of the following):
+    hola
+    master
+  Remote branches:
+    hola   tracked
+    master tracked
+  Local branch configured for &#39;git pull&#39;:
+    master merges with remote master
+  Local ref configured for &#39;git push&#39;:
+    master pushes to master (up to date)
+</pre></div>
+</td></tr></table>
+
+<h3 id="ramas-remotas">Ramas remotas<a class="headerlink" href="#ramas-remotas" title="Permanent link">&para;</a></h3>
+<p>Para poder ver las ramas remotas debemos usar el parámetro <em>-a</em> en la orden <code>git branch</code>:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git branch -a
+* master
+  remotes/origin/HEAD -&gt; origin/master
+  remotes/origin/hola
+  remotes/origin/master
+</pre></div>
+</td></tr></table>
+
+<h3 id="como-actualizar-el-repositorio-copia">Cómo actualizar el repositorio copia<a class="headerlink" href="#como-actualizar-el-repositorio-copia" title="Permanent link">&para;</a></h3>
+<p>Cuando se trabaja en grupo, es normal que el repositorio remoto cambie. Vamos a modificarlo y ver como podemos actualizar el repositorio copia:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cd ..
+$ cd curso-git
+$ cat README.md
+# Curso de GIT
+
+Este proyecto contiene el curso de introducción a GIT.
+Ahora es un repositorio compartido.
+$ git add README.md
+$ git commit -m &quot;Cambiado el README.md&quot;
+[master 3d2db03] Cambiado el README.md
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+</pre></div>
+</td></tr></table>
+
+<p>Al proceso de traer una actualización se le llama <em>pull</em> y de hecho hay una orden llamada <code>git pull</code> que realiza ese cometido. Vamos a ver, de todas maneras, el camino largo usando <code>git fetch</code>. Esta última órden lo que hace es actualizar la rama <em>origin/master</em> y <em>origin/HEAD</em> de nuestro repositorio copia, pero no actualiza las ramas locales. Es decir, no fusiona las ramas remotas con las locales:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cd ../curso-git-clonado/
+$ git fetch
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+De /home/cc0gobas/git/curso-git
+   491f1d2..3d2db03  master     -&gt; origin/master
+$ git hist --all
+* 3d2db03 2013-06-17 | Cambiado el README.md (origin/master, origin/HEAD) [Sergio Gómez]
+* 491f1d2 2013-06-16 | hola usa la clase HolaMundo (HEAD, origin/hola, master) [Sergio Gómez]
+* c13d75c 2013-06-16 | Añadida la clase HolaMundo [Sergio Gómez]
+* c3e65d0 2013-06-16 | Añadido README.md [Sergio Gómez]
+* 81c6e93 2013-06-16 | Movido hola.php a lib [Sergio Gómez]
+* 96a39df 2013-06-16 | Añadido el autor del programa y su email [Sergio Gómez]
+* fd4da94 2013-06-16 | Se añade un comentario al cambio del valor por defecto (v1) [Sergio Gómez]
+* 3283e0d 2013-06-16 | Se añade un parámetro por defecto (v1-beta) [Sergio Gómez]
+* efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
+* e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
+</pre></div>
+</td></tr></table>
+
+<p>Podemos comprobar que el archivore <code>README.md</code> no ha cambiado. Para hacer los cambios tendremos que fusionar las ramas como hemos visto:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git merge origin/master
+Updating 491f1d2..3d2db03
+Fast-forward
+ README.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+</pre></div>
+</td></tr></table>
+
+<p>Los dos pasos anteriores se suelen reducir en uno solo:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git pull
+Updating 491f1d2..3d2db03
+Fast-forward
+ README.md | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+</pre></div>
+</td></tr></table>
+
+<p>¿Por qué existe entonces <code>git fetch</code>? Pues porque normalmente los integradores prefieren ver los cambios que se van a realizar antes de hacerlos. Se puede hacer un <em>checkout</em> a la rama remota para ver lo que ha cambiado.</p>
+<h3 id="anadir-una-rama-de-seguimiento">Añadir una rama de seguimiento<a class="headerlink" href="#anadir-una-rama-de-seguimiento" title="Permanent link">&para;</a></h3>
+<p>Cuando se clona un repositorio, en el repositorio local solo se crea una rama máster, pero las ramas secundarias que ya existían en el repositorio remoto no se crean. Solo aparecen a través de las ramas remotas <em>origin/*</em>. Para crear ramas locales que hagan seguimiento de esas ramas remotas usaremos <code>git branch</code>:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git branch --track hola origin/hola
+Branch hola set up to track remote branch hola from origin.
+$ git branch -a
+  hola
+* master
+  remotes/origin/HEAD -&gt; origin/master
+  remotes/origin/hola
+  remotes/origin/master
+$ git hist --max-count=2
+* 3d2db03 2013-06-17 | Cambiado el README.md (HEAD, origin/master, origin/HEAD, master) [Sergio Gómez]
+* 491f1d2 2013-06-16 | hola usa la clase HolaMundo (origin/hola, hola) [Sergio Gómez]
+</pre></div>
+</td></tr></table>
+
+<h3 id="borrar-ramas-remotas">Borrar ramas remotas<a class="headerlink" href="#borrar-ramas-remotas" title="Permanent link">&para;</a></h3>
+<p>Para borrar una rama local se usaba <code>git branch</code>:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git branch -d nombre-rama
+</pre></div>
+</td></tr></table>
+
+<p>Pero para borrar una rama que esté en el repositorio remoto hay que usar <code>git push</code> colocando el símbolo <code>:</code> antes del nombre de la rama:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git push origin :nombre-rama
+</pre></div>
+</td></tr></table>
+
+<h2 id="repositorios-basicos">Repositorios básicos<a class="headerlink" href="#repositorios-basicos" title="Permanent link">&para;</a></h2>
+<h3 id="creacion">Creación<a class="headerlink" href="#creacion" title="Permanent link">&para;</a></h3>
+<p>Los repositorio básicos (en inglés conocidos como <em>bare repositories</em>) no contienen la parte llamada <em>"directorio de trabajo"</em> y son usados específicamente para ser compartidos, se usa indicando el parámetro <code>--bare</code> a las órdenes <code>git clone</code> y <code>git init</code>:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cd ..
+$ git clone --bare curso-git curso-git.git
+Cloning into bare repository &#39;curso-git.git&#39;...
+hecho.
+$ ls curso-git.git/
+branches  config  description  HEAD  hooks  info  objects  packed-refs  refs
+</pre></div>
+</td></tr></table>
+
+<h3 id="anadir-un-repositorio-remoto">Añadir un repositorio remoto<a class="headerlink" href="#anadir-un-repositorio-remoto" title="Permanent link">&para;</a></h3>
+<p>Es posible indicar, para un proyecto ya existente, que utilice un repositorio remoto. En este caso, al proyecto original vamos a indicarle que use el nuevo repositorio básico:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cd curso-git
+$ git remote add origin ../curso-git.git
+</pre></div>
+</td></tr></table>
+
+<h3 id="subir-cambios">Subir cambios<a class="headerlink" href="#subir-cambios" title="Permanent link">&para;</a></h3>
+<p>El escenario que tenemos ahora es el siguiente:</p>
+<ul>
+<li>Un repositorio básico llamado <em>curso-git.git</em> donde se almacenará centralmente el proyecto.</li>
+<li>Un repositorio llamado <em>curso-git</em> donde trabajaremos.</li>
+</ul>
+<p>Este es el escenario normal, un directorio centralizado y compartido y uno donde trabajamos localmente. En este escenario, iremos realizando cambios en nuestro directorio y, posteriormente, los subiremos al repositorio compartido. Para eso usaremos la orden <code>git push</code>.</p>
+<p>Vamos a modificar nuestro archivo <code>README.md</code> de nuevo y a subir los cambios:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cat README.md
+# Curso de GIT
+
+Este proyecto contiene el curso de introducción a GIT.
+Ahora es un repositorio compartido.
+Con esto ya estamos terminando el curso.
+$ git add README.md
+$ git commit -m &quot;Añadido un comentario compartido en README.md&quot;
+[master 243d834] Añadido un comentario compartido en README.md
+ 1 file changed, 1 insertion(+)
+$ git push -u origin master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 372 bytes, done.
+Total 3 (delta 1), reused 0 (delta 0)
+To ../curso-git.git/
+   3d2db03..243d834  master -&gt; master
+Branch master set up to track remote branch master from origin.
+</pre></div>
+</td></tr></table>
+
+<h3 id="actualizar-cambios-desde-repositorios-compartidos">Actualizar cambios desde repositorios compartidos<a class="headerlink" href="#actualizar-cambios-desde-repositorios-compartidos" title="Permanent link">&para;</a></h3>
+<p>El repositorio <em>curso-git-clonado</em> era un clon del repositorio original. Git permite modificar las ramas remotas de un proyecto o añadir más, de tal manera que podríamos hacer ahora dos cosas con ese repositorio:</p>
+<ul>
+<li>Eliminar las referencias de origin/* y crear nuevas al repositorio básico <code>curso-git.git</code>.</li>
+<li>Añadir más ramas remotas asociadas al repositorio básico.</li>
+</ul>
+<p>Esto último sería:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ cd ../curso-git-clonado/
+$ git remote add shared ../curso-git.git
+$ git pull -u shared master
+remote: Counting objects: 5, done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+De ../curso-git
+ * branch            master     -&gt; FETCH_HEAD
+Updating 3d2db03..243d834
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+$ cat README.md
+# Curso de GIT
+
+Este proyecto contiene el curso de introducción a GIT.
+Ahora es un repositorio compartido.
+Con esto ya estamos terminando el curso.
+</pre></div>
+</td></tr></table>
+
+<p>El parámetro <em>-u</em> es equivalente a hacer esto:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git branch --track shared master
+</pre></div>
+</td></tr></table>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/aulasoftwarelibre" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/aulasl" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://facebook.com/aulasl" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://instagram.com/aulasoftwarelibre" class="md-footer-social__link fa fa-instagram"></a>
+    
+  </div>
+
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+        
+        
+          
+          <script src="../assets/javascripts/lunr/lunr.stemmer.support.js"></script>
+          
+            
+              
+              
+                <script src="../assets/javascripts/lunr/lunr.es.js"></script>
+              
+            
+          
+          
+        
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

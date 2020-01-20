@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -35,8 +35,8 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.4">
+      <link rel="shortcut icon" href="../images/logoasl.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
@@ -44,23 +44,52 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+    
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-51754922-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -71,24 +100,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -117,22 +129,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Taller de Git
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              Taller de Git
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Ramas
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -155,7 +166,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -166,20 +176,18 @@
 
   
 
-
-  <a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      aulasoftwarelibre/taller-de-git
+<a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    aulasoftwarelibre/taller-de-git
+  </div>
+</a>
           </div>
         </div>
       
@@ -192,7 +200,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -215,20 +223,18 @@
 
   
 
-
-  <a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      aulasoftwarelibre/taller-de-git
+<a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    aulasoftwarelibre/taller-de-git
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -338,7 +344,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#administracion-de-ramas" title="Administración de ramas" class="md-nav__link">
+  <a href="#administracion-de-ramas" class="md-nav__link">
     Administración de ramas
   </a>
   
@@ -346,21 +352,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#crear-una-nueva-rama" title="Crear una nueva rama" class="md-nav__link">
+  <a href="#crear-una-nueva-rama" class="md-nav__link">
     Crear una nueva rama
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#modificaciones-en-la-rama-secundaria" title="Modificaciones en la rama secundaria" class="md-nav__link">
+  <a href="#modificaciones-en-la-rama-secundaria" class="md-nav__link">
     Modificaciones en la rama secundaria
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#modificaciones-en-la-rama-master" title="Modificaciones en la rama master" class="md-nav__link">
+  <a href="#modificaciones-en-la-rama-master" class="md-nav__link">
     Modificaciones en la rama master
   </a>
   
@@ -372,7 +378,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fusion-de-ramas-y-resolucion-de-conflictos" title="Fusión de ramas y resolución de conflictos" class="md-nav__link">
+  <a href="#fusion-de-ramas-y-resolucion-de-conflictos" class="md-nav__link">
     Fusión de ramas y resolución de conflictos
   </a>
   
@@ -380,21 +386,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mezclar-ramas" title="Mezclar ramas" class="md-nav__link">
+  <a href="#mezclar-ramas" class="md-nav__link">
     Mezclar ramas
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#resolver-conflictos" title="Resolver conflictos" class="md-nav__link">
+  <a href="#resolver-conflictos" class="md-nav__link">
     Resolver conflictos
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rebasing-vs-merging" title="Rebasing vs Merging" class="md-nav__link">
+  <a href="#rebasing-vs-merging" class="md-nav__link">
     Rebasing vs Merging
   </a>
   
@@ -406,7 +412,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mezclando-con-la-rama-master" title="Mezclando con la rama master" class="md-nav__link">
+  <a href="#mezclando-con-la-rama-master" class="md-nav__link">
     Mezclando con la rama master
   </a>
   
@@ -492,7 +498,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#administracion-de-ramas" title="Administración de ramas" class="md-nav__link">
+  <a href="#administracion-de-ramas" class="md-nav__link">
     Administración de ramas
   </a>
   
@@ -500,21 +506,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#crear-una-nueva-rama" title="Crear una nueva rama" class="md-nav__link">
+  <a href="#crear-una-nueva-rama" class="md-nav__link">
     Crear una nueva rama
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#modificaciones-en-la-rama-secundaria" title="Modificaciones en la rama secundaria" class="md-nav__link">
+  <a href="#modificaciones-en-la-rama-secundaria" class="md-nav__link">
     Modificaciones en la rama secundaria
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#modificaciones-en-la-rama-master" title="Modificaciones en la rama master" class="md-nav__link">
+  <a href="#modificaciones-en-la-rama-master" class="md-nav__link">
     Modificaciones en la rama master
   </a>
   
@@ -526,7 +532,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#fusion-de-ramas-y-resolucion-de-conflictos" title="Fusión de ramas y resolución de conflictos" class="md-nav__link">
+  <a href="#fusion-de-ramas-y-resolucion-de-conflictos" class="md-nav__link">
     Fusión de ramas y resolución de conflictos
   </a>
   
@@ -534,21 +540,21 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mezclar-ramas" title="Mezclar ramas" class="md-nav__link">
+  <a href="#mezclar-ramas" class="md-nav__link">
     Mezclar ramas
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#resolver-conflictos" title="Resolver conflictos" class="md-nav__link">
+  <a href="#resolver-conflictos" class="md-nav__link">
     Resolver conflictos
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rebasing-vs-merging" title="Rebasing vs Merging" class="md-nav__link">
+  <a href="#rebasing-vs-merging" class="md-nav__link">
     Rebasing vs Merging
   </a>
   
@@ -560,7 +566,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mezclando-con-la-rama-master" title="Mezclando con la rama master" class="md-nav__link">
+  <a href="#mezclando-con-la-rama-master" class="md-nav__link">
     Mezclando con la rama master
   </a>
   
@@ -590,9 +596,9 @@
 <h3 id="crear-una-nueva-rama">Crear una nueva rama<a class="headerlink" href="#crear-una-nueva-rama" title="Permanent link">&para;</a></h3>
 <p>Cuando vamos a trabajar en una nueva funcionalidad, es conveniente hacerlo en una nueva rama, para no modificar la rama principal y dejarla inestable. Aunque la orden para manejar ramas es <code>git branch</code> podemos usar también <code>git checkout</code>.</p>
 <p>Vamos a crear una nueva rama:</p>
-<div class="codehilite"><pre><span></span>git branch hola
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git branch hola
 </pre></div>
-
+</td></tr></table>
 
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -601,25 +607,42 @@ disponibles.</p>
 </div>
 <p>La orden anterior no devuelve ningún resultado y tampoco nos cambia de rama, para eso
 debemos usar <em>checkout</em>:</p>
-<div class="codehilite"><pre><span></span>$ git checkout hola
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout hola
 Switched to branch &#39;hola&#39;
 </pre></div>
-
+</td></tr></table>
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Hay una forma más rapida de hacer ambas acciones en un solo paso. Con el parámetro
 <code>-b</code> de <code>git checkout</code> podemos cambiarnos a una rama que, si no existe, se crea
 instantáneamente.</p>
-<div class="codehilite"><pre><span></span>$ git checkout -b hola
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout -b hola
 Switched to a new branch &#39;hola&#39;
 </pre></div>
-
+</td></tr></table>
 
 </div>
 <h3 id="modificaciones-en-la-rama-secundaria">Modificaciones en la rama secundaria<a class="headerlink" href="#modificaciones-en-la-rama-secundaria" title="Permanent link">&para;</a></h3>
 <p>Añadimos un nuevo archivo en el directorio <code>lib</code> llamado <code>HolaMundo.php</code>:</p>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 
 <span class="k">class</span> <span class="nc">HolaMundo</span>
 <span class="p">{</span>
@@ -636,10 +659,16 @@ Switched to a new branch &#39;hola&#39;
    <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Y modificamos <code>hola.php</code>:</p>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="c1">// Autor: Sergio Gómez &lt;sergio@uco.es&gt;</span>
 <span class="c1">// El nombre por defecto es Mundo</span>
 <span class="k">require</span><span class="p">(</span><span class="s1">&#39;HolaMundo.php&#39;</span><span class="p">);</span>
@@ -647,10 +676,18 @@ Switched to a new branch &#39;hola&#39;
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">:</span> <span class="s2">&quot;Mundo&quot;</span><span class="p">;</span>
 <span class="k">print</span> <span class="k">new</span> <span class="nx">HolaMundo</span><span class="p">(</span><span class="nv">$nombre</span><span class="p">);</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Podríamos confirmar los cambios todos de golpe, pero lo haremos de uno en uno, con su comentario.</p>
-<div class="codehilite"><pre><span></span>$ git add lib/HolaMundo.php
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git add lib/HolaMundo.php
 $ git commit -m &quot;Añadida la clase HolaMundo&quot;
 [hola 6932156] Añadida la clase HolaMundo
  1 file changed, 16 insertions(+)
@@ -660,32 +697,53 @@ $ git commit -m &quot;hola usa la clase HolaMundo&quot;
 [hola 9862f33] hola usa la clase HolaMundo
  1 file changed, 3 insertions(+), 1 deletion(-)
 </pre></div>
-
+</td></tr></table>
 
 <p>Y ahora con la orden <code>git checkout</code> podemos movernos entre ramas:</p>
-<div class="codehilite"><pre><span></span>$ git checkout master
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout master
 Switched to branch &#39;master&#39;
 $ git checkout hola
 Switched to branch &#39;hola&#39;
 </pre></div>
-
+</td></tr></table>
 
 <h3 id="modificaciones-en-la-rama-master">Modificaciones en la rama master<a class="headerlink" href="#modificaciones-en-la-rama-master" title="Permanent link">&para;</a></h3>
 <p>Podemos volver y añadir un nuevo archivo a la rama principal:</p>
-<div class="codehilite"><pre><span></span>$ git checkout master
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout master
 Switched to branch &#39;master&#39;
 </pre></div>
-
+</td></tr></table>
 
 <p>Creamos un archivo llamado <code>README.md</code> en la raíz de nuestro proyecto con el siguiente contenido:</p>
-<div class="codehilite"><pre><span></span><span class="gh">#</span> Curso de GIT
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="gh">#</span> Curso de GIT
 
 Este proyecto contiene el curso de introducción a GIT
 </pre></div>
-
+</td></tr></table>
 
 <p>Y lo añadimos a nuestro repositorio en la rama en la que estamos:</p>
-<div class="codehilite"><pre><span></span>$ git add README.md
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git add README.md
 $ git commit -m &quot;Añadido README.md&quot;
 [master c3e65d0] Añadido README.md
  1 file changed, 3 insertions(+)
@@ -702,13 +760,33 @@ $ git hist --all
 * efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
 * e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
 </pre></div>
-
+</td></tr></table>
 
 <p>Y vemos como <code>git hist</code> muestra la bifurcación en nuestro código.</p>
 <h2 id="fusion-de-ramas-y-resolucion-de-conflictos">Fusión de ramas y resolución de conflictos<a class="headerlink" href="#fusion-de-ramas-y-resolucion-de-conflictos" title="Permanent link">&para;</a></h2>
 <h3 id="mezclar-ramas">Mezclar ramas<a class="headerlink" href="#mezclar-ramas" title="Permanent link">&para;</a></h3>
 <p>Podemos incorporar los cambios de una rama a otra con la orden <code>git merge</code></p>
-<div class="codehilite"><pre><span></span>$ git checkout hola
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout hola
 Switched to branch &#39;hola&#39;
 $ git merge master
 Merge made by the &#39;recursive&#39; strategy.
@@ -730,27 +808,50 @@ $ git hist --all
 * efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
 * e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
 </pre></div>
-
+</td></tr></table>
 
 <p>De esa forma se puede trabajar en una rama secundaria incorporando los cambios de la rama principal o de otra rama.</p>
 <h3 id="resolver-conflictos">Resolver conflictos<a class="headerlink" href="#resolver-conflictos" title="Permanent link">&para;</a></h3>
 <p>Un conflicto es cuando se produce una fusión que Git no es capaz de resolver. Vamos a modificar la rama master para crear uno con la rama hola.</p>
-<div class="codehilite"><pre><span></span>$ git checkout master
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout master
 Switched to branch &#39;master&#39;
 </pre></div>
-
+</td></tr></table>
 
 <p>Modificamos nuestro archivo <em>hola.php</em> de nuevo:</p>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="c1">// Autor: Sergio Gómez &lt;sergio@uco.es&gt;</span>
 <span class="k">print</span> <span class="s2">&quot;Introduce tu nombre:&quot;</span><span class="p">;</span>
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="nb">fgets</span><span class="p">(</span><span class="nx">STDIN</span><span class="p">));</span>
 <span class="o">@</span><span class="k">print</span> <span class="s2">&quot;Hola, </span><span class="si">{</span><span class="nv">$nombre</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Y guardamos los cambios:</p>
-<div class="codehilite"><pre><span></span>$ git add lib/hola.php
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git add lib/hola.php
 $ git commit -m &quot;Programa interactivo&quot;
 [master 9c85275] Programa interactivo
  1 file changed, 2 insertions(+), 2 deletions(-)
@@ -770,20 +871,37 @@ $ git hist --all
 * efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
 * e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
 </pre></div>
-
+</td></tr></table>
 
 <p>Volvemos a la rama hola y fusionamos:</p>
-<div class="codehilite"><pre><span></span>$ git checkout hola
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout hola
 Switched to branch &#39;hola&#39;
 $ git merge master
 Auto-merging lib/hola.php
 CONFLICT (content): Merge conflict in lib/hola.php
 Automatic merge failed; fix conflicts and then commit the result.
 </pre></div>
-
+</td></tr></table>
 
 <p>Si editamos nuestro archivo <code>lib/hola.php</code> obtendremos algo similar a esto:</p>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="c1">// Autor: Sergio Gómez &lt;sergio@uco.es&gt;</span>
 <span class="o">&lt;&lt;&lt;&lt;&lt;&lt;&lt;</span> <span class="nx">HEAD</span>
 <span class="c1">// El nombre por defecto es Mundo</span>
@@ -797,10 +915,16 @@ Automatic merge failed; fix conflicts and then commit the result.
 <span class="o">@</span><span class="k">print</span> <span class="s2">&quot;Hola, </span><span class="si">{</span><span class="nv">$nombre</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
 <span class="o">&gt;&gt;&gt;&gt;&gt;&gt;&gt;</span> <span class="nx">master</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>La primera parte marca el código que estaba en la rama donde trabajábamos (HEAD) y la parte final el código de donde fusionábamos. Resolvemos el conflicto, dejando el archivo como sigue:</p>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="c1">// Autor: Sergio Gómez &lt;sergio@uco.es&gt;</span>
 <span class="k">require</span><span class="p">(</span><span class="s1">&#39;HolaMundo.php&#39;</span><span class="p">);</span>
 
@@ -808,19 +932,41 @@ Automatic merge failed; fix conflicts and then commit the result.
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="nb">fgets</span><span class="p">(</span><span class="nx">STDIN</span><span class="p">));</span>
 <span class="k">print</span> <span class="k">new</span> <span class="nx">HolaMundo</span><span class="p">(</span><span class="nv">$nombre</span><span class="p">);</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Y resolvemos el conflicto confirmando los cambios:</p>
-<div class="codehilite"><pre><span></span>$ git add lib/hola.php
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git add lib/hola.php
 $ git commit -m &quot;Solucionado el conflicto al fusionar con la rama master&quot;
 [hola a36af04] Solucionado el conflicto al fusionar con la rama master
 </pre></div>
-
+</td></tr></table>
 
 <h3 id="rebasing-vs-merging">Rebasing vs Merging<a class="headerlink" href="#rebasing-vs-merging" title="Permanent link">&para;</a></h3>
 <p>Rebasing es otra técnica para fusionar distinta a merge y usa la orden <code>git rebase</code>. Vamos a dejar nuestro proyecto como estaba antes del fusionado. Para ello necesitamos anotar el hash anterior al de la acción de <em>merge</em>. El que tiene la anotación <em>"hola usa la clase HolaMundo"</em>.</p>
 <p>Para ello podemos usar la orden <code>git reset</code> que nos permite mover HEAD donde queramos.</p>
-<div class="codehilite"><pre><span></span>$ git checkout hola
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout hola
 Switched to branch &#39;hola&#39;
 $ git hist
 *   a36af04 2013-06-16 | Solucionado el conflicto al fusionar con la rama master (HEAD, hola) [Sergio Gómez]
@@ -842,10 +988,21 @@ $ git hist
 $ git reset --hard 9862f33
 HEAD is now at 9862f33 hola usa la clase HolaMundo
 </pre></div>
-
+</td></tr></table>
 
 <p>Y nuestro estado será:</p>
-<div class="codehilite"><pre><span></span>$ git hist --all
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git hist --all
 * 9862f33 2013-06-16 | hola usa la clase HolaMundo (HEAD, hola) [Sergio Gómez]
 * 6932156 2013-06-16 | Añadida la clase HolaMundo [Sergio Gómez]
 | * 9c85275 2013-06-16 | Programa interactivo (master) [Sergio Gómez]
@@ -858,10 +1015,25 @@ HEAD is now at 9862f33 hola usa la clase HolaMundo
 * efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
 * e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
 </pre></div>
-
+</td></tr></table>
 
 <p>Hemos desecho todos los <em>merge</em> y nuestro árbol está <em>"limpio"</em>. Vamos a probar ahora a hacer un rebase. Continuamos en la rama <code>hola</code> y ejecutamos lo siguiente:</p>
-<div class="codehilite"><pre><span></span>$ git rebase master
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git rebase master
 First, rewinding head to replay your work on top of it...
 Applying: Añadida la clase HolaMundo
 Applying: hola usa la clase HolaMundo
@@ -878,10 +1050,16 @@ When you have resolved this problem, run &quot;git rebase --continue&quot;.
 If you prefer to skip this patch, run &quot;git rebase --skip&quot; instead.
 To check out the original branch and stop rebasing, run &quot;git rebase --abort&quot;.
 </pre></div>
-
+</td></tr></table>
 
 <p>El conflicto, por supuesto, se sigue dando. Resolvemos guardando el archivo <code>hola.php</code> como en los casos anteriores:</p>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="c1">// Autor: Sergio Gómez &lt;sergio@uco.es&gt;</span>
 <span class="k">require</span><span class="p">(</span><span class="s1">&#39;HolaMundo.php&#39;</span><span class="p">);</span>
 
@@ -889,10 +1067,21 @@ To check out the original branch and stop rebasing, run &quot;git rebase --abort
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="nb">fgets</span><span class="p">(</span><span class="nx">STDIN</span><span class="p">));</span>
 <span class="k">print</span> <span class="k">new</span> <span class="nx">HolaMundo</span><span class="p">(</span><span class="nv">$nombre</span><span class="p">);</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Añadimos los cambios en <em>staging</em> y en esta ocasión, y tal como nos indicaba en el mensaje anterior, no tenemos que hacer <code>git commit</code> sino continuar con el <em>rebase</em>:</p>
-<div class="codehilite"><pre><span></span>$ git add lib/hola.php
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git add lib/hola.php
 $ git status
 rebase in progress; onto 269eaca
 You are currently rebasing branch &#39;hola&#39; on &#39;269eaca&#39;.
@@ -905,10 +1094,20 @@ Changes to be committed:
 $ git rebase --continue
 Applying: hola usa la clase HolaMundo
 </pre></div>
-
+</td></tr></table>
 
 <p>Y ahora vemos que nuestro árbol tiene un aspecto distinto, mucho más limpio:</p>
-<div class="codehilite"><pre><span></span>$ git hist --all
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git hist --all
 * 9862f33 2013-06-16 | hola usa la clase HolaMundo (HEAD -&gt; hola) [Sergio Gómez]
 * 6932156 2013-06-16 | Añadida la clase HolaMundo [Sergio Gómez]
 * 9c85275 2013-06-16 | Programa interactivo (master) [Sergio Gómez]
@@ -920,12 +1119,31 @@ Applying: hola usa la clase HolaMundo
 * efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
 * e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
 </pre></div>
-
+</td></tr></table>
 
 <p>Lo que hace rebase es volver a aplicar todos los cambios a la rama máster, desde su nodo más reciente. Eso significa que se modifica el orden o la historia de creación de los cambios. Por eso rebase no debe usarse si el orden es importante o si la rama es compartida.</p>
 <h2 id="mezclando-con-la-rama-master">Mezclando con la rama master<a class="headerlink" href="#mezclando-con-la-rama-master" title="Permanent link">&para;</a></h2>
 <p>Ya hemos terminado de implementar los cambios en nuestra rama secundaria y es hora de llevar los cambios a la rama principal. Usamos <code>git merge</code> para hacer una fusión normal:</p>
-<div class="codehilite"><pre><span></span>$ git checkout master
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout master
 Switched to branch &#39;master&#39;
 $ git merge hola
 Updating c3e65d0..491f1d2
@@ -946,11 +1164,22 @@ Fast-forward
  * efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
  * e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
 </pre></div>
-
+</td></tr></table>
 
 <p>Vemos que indica que el tipo de fusión es <em>fast-forward</em>. Este tipo de fusión tiene el problema que no deja rastro de la fusión, por eso suele ser recomendable usar el parámetro  <code>--no-ff</code> para que quede constancia siempre de que se ha fusionado una rama con otra.</p>
 <p>Vamos a volver a probar ahora sin hacer <em>fast-forward</em>. Reseteamos <em>master</em> al estado <em>"Programa interactivo"</em>.</p>
-<div class="codehilite"><pre><span></span>$ git reset --hard 9c85275
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git reset --hard 9c85275
 $ git hist --all
 * 9862f33 2013-06-16 | hola usa la clase HolaMundo (HEAD -&gt; hola) [Sergio Gómez]
 * 6932156 2013-06-16 | Añadida la clase HolaMundo [Sergio Gómez]
@@ -963,10 +1192,29 @@ $ git hist --all
 * efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
 * e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
 </pre></div>
-
+</td></tr></table>
 
 <p>Vemos que estamos como en el final de la sección anterior, así que ahora mezclamos:</p>
-<div class="codehilite"><pre><span></span>$ git merge -m &quot;Aplicando los cambios de la rama hola&quot; --no-ff hola
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git merge -m &quot;Aplicando los cambios de la rama hola&quot; --no-ff hola
 Merge made by the &#39;recursive&#39; strategy.
  lib/HolaMundo.php | 16 ++++++++++++++++
  lib/hola.php      |  4 +++-
@@ -987,12 +1235,13 @@ $ git hist --all
 * efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
 * e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
 </pre></div>
-
+</td></tr></table>
 
 <p>En la siguiente imagen se puede ver la diferencia:</p>
 <p><img alt="Diferencias entre tipos de fusión" src="../images/gitlab-merge-ff.png" /></p>
                 
                   
+                
                 
               
               
@@ -1054,7 +1303,6 @@ $ git hist --all
           Material for MkDocs</a>
       </div>
       
-        
   <div class="md-footer-social">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
@@ -1064,16 +1312,17 @@ $ git hist --all
     
       <a href="https://facebook.com/aulasl" class="md-footer-social__link fa fa-facebook"></a>
     
+      <a href="https://instagram.com/aulasoftwarelibre" class="md-footer-social__link fa fa-instagram"></a>
+    
   </div>
 
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.30f6b8b1.js"></script>
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
       
         
         
@@ -1090,12 +1339,7 @@ $ git hist --all
           
         
       
-      <script>app.initialize({version:"0.17.5",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-51754922-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>

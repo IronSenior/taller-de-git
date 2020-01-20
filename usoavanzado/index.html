@@ -2,7 +2,7 @@
 
 
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es" class="no-js">
   <head>
     
@@ -35,8 +35,8 @@
       
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.5, mkdocs-material-2.9.4">
+      <link rel="shortcut icon" href="../images/logoasl.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
     
     
       
@@ -44,23 +44,52 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application.451f80e5.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
       
       
     
     
-      <script src="../assets/javascripts/modernizr.1aa3b519.js"></script>
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
     
     
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
       
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
     <link rel="stylesheet" href="../assets/fonts/material-icons.css">
     
+    
       <link rel="stylesheet" href="../extra.css">
+    
+    
+      
+        
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-51754922-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
     
     
   </head>
@@ -71,24 +100,7 @@
       <defs>
         
         
-          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
-    viewBox="0 0 416 448" id="__github">
-  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
-        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
-        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
-        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
-        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
-        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
-        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
-        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
-        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
-        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
-        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
-        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
-        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
-        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
-        99.5z" />
-</svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="__github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
         
       </defs>
     </svg>
@@ -117,22 +129,21 @@
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
           
-            
-              <span class="md-header-nav__topic">
-                Taller de Git
-              </span>
-              <span class="md-header-nav__topic">
+            <span class="md-header-nav__topic">
+              Taller de Git
+            </span>
+            <span class="md-header-nav__topic">
+              
                 Uso avanzado
-              </span>
-            
+              
+            </span>
           
         </div>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
           
-            <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
-            
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
@@ -155,7 +166,6 @@
     </div>
   </div>
 </div>
-          
         
       </div>
       
@@ -166,20 +176,18 @@
 
   
 
-
-  <a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      aulasoftwarelibre/taller-de-git
+<a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    aulasoftwarelibre/taller-de-git
+  </div>
+</a>
           </div>
         </div>
       
@@ -192,7 +200,7 @@
         
       
       
-      <main class="md-main">
+      <main class="md-main" role="main">
         <div class="md-main__inner md-grid" data-md-component="container">
           
             
@@ -215,20 +223,18 @@
 
   
 
-
-  <a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
-    
-      <div class="md-source__icon">
-        <svg viewBox="0 0 24 24" width="24" height="24">
-          <use xlink:href="#__github" width="24" height="24"></use>
-        </svg>
-      </div>
-    
-    <div class="md-source__repository">
-      aulasoftwarelibre/taller-de-git
+<a href="https://github.com/aulasoftwarelibre/taller-de-git.git/" title="Ir al repositorio" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
     </div>
-  </a>
-
+  
+  <div class="md-source__repository">
+    aulasoftwarelibre/taller-de-git
+  </div>
+</a>
     </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -326,7 +332,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#deshacer-cambios" title="Deshacer cambios" class="md-nav__link">
+  <a href="#deshacer-cambios" class="md-nav__link">
     Deshacer cambios
   </a>
   
@@ -334,35 +340,35 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#deshaciendo-cambios-antes-de-la-fase-de-staging" title="Deshaciendo cambios antes de la fase de staging." class="md-nav__link">
+  <a href="#deshaciendo-cambios-antes-de-la-fase-de-staging" class="md-nav__link">
     Deshaciendo cambios antes de la fase de staging.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#deshaciendo-cambios-antes-del-commit" title="Deshaciendo cambios antes del commit" class="md-nav__link">
+  <a href="#deshaciendo-cambios-antes-del-commit" class="md-nav__link">
     Deshaciendo cambios antes del commit
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#deshaciendo-commits-no-deseados" title="Deshaciendo commits no deseados." class="md-nav__link">
+  <a href="#deshaciendo-commits-no-deseados" class="md-nav__link">
     Deshaciendo commits no deseados.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#borrar-commits-de-una-rama" title="Borrar commits de una rama" class="md-nav__link">
+  <a href="#borrar-commits-de-una-rama" class="md-nav__link">
     Borrar commits de una rama
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#modificar-un-commit" title="Modificar un commit" class="md-nav__link">
+  <a href="#modificar-un-commit" class="md-nav__link">
     Modificar un commit
   </a>
   
@@ -374,7 +380,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#moviendo-y-borrando-archivos" title="Moviendo y borrando archivos" class="md-nav__link">
+  <a href="#moviendo-y-borrando-archivos" class="md-nav__link">
     Moviendo y borrando archivos
   </a>
   
@@ -382,14 +388,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mover-un-archivo-a-otro-directorio-con-git" title="Mover un archivo a otro directorio con git" class="md-nav__link">
+  <a href="#mover-un-archivo-a-otro-directorio-con-git" class="md-nav__link">
     Mover un archivo a otro directorio con git
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#mover-y-borrar-archivos" title="Mover y borrar archivos." class="md-nav__link">
+  <a href="#mover-y-borrar-archivos" class="md-nav__link">
     Mover y borrar archivos.
   </a>
   
@@ -492,7 +498,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#deshacer-cambios" title="Deshacer cambios" class="md-nav__link">
+  <a href="#deshacer-cambios" class="md-nav__link">
     Deshacer cambios
   </a>
   
@@ -500,35 +506,35 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#deshaciendo-cambios-antes-de-la-fase-de-staging" title="Deshaciendo cambios antes de la fase de staging." class="md-nav__link">
+  <a href="#deshaciendo-cambios-antes-de-la-fase-de-staging" class="md-nav__link">
     Deshaciendo cambios antes de la fase de staging.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#deshaciendo-cambios-antes-del-commit" title="Deshaciendo cambios antes del commit" class="md-nav__link">
+  <a href="#deshaciendo-cambios-antes-del-commit" class="md-nav__link">
     Deshaciendo cambios antes del commit
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#deshaciendo-commits-no-deseados" title="Deshaciendo commits no deseados." class="md-nav__link">
+  <a href="#deshaciendo-commits-no-deseados" class="md-nav__link">
     Deshaciendo commits no deseados.
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#borrar-commits-de-una-rama" title="Borrar commits de una rama" class="md-nav__link">
+  <a href="#borrar-commits-de-una-rama" class="md-nav__link">
     Borrar commits de una rama
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#modificar-un-commit" title="Modificar un commit" class="md-nav__link">
+  <a href="#modificar-un-commit" class="md-nav__link">
     Modificar un commit
   </a>
   
@@ -540,7 +546,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#moviendo-y-borrando-archivos" title="Moviendo y borrando archivos" class="md-nav__link">
+  <a href="#moviendo-y-borrando-archivos" class="md-nav__link">
     Moviendo y borrando archivos
   </a>
   
@@ -548,14 +554,14 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mover-un-archivo-a-otro-directorio-con-git" title="Mover un archivo a otro directorio con git" class="md-nav__link">
+  <a href="#mover-un-archivo-a-otro-directorio-con-git" class="md-nav__link">
     Mover un archivo a otro directorio con git
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#mover-y-borrar-archivos" title="Mover y borrar archivos." class="md-nav__link">
+  <a href="#mover-y-borrar-archivos" class="md-nav__link">
     Mover y borrar archivos.
   </a>
   
@@ -589,22 +595,35 @@
 <h2 id="deshacer-cambios">Deshacer cambios<a class="headerlink" href="#deshacer-cambios" title="Permanent link">&para;</a></h2>
 <h3 id="deshaciendo-cambios-antes-de-la-fase-de-staging">Deshaciendo cambios antes de la fase de staging.<a class="headerlink" href="#deshaciendo-cambios-antes-de-la-fase-de-staging" title="Permanent link">&para;</a></h3>
 <p>Volvemos a la rama máster y vamos a modificar el comentario que pusimos:</p>
-<div class="codehilite"><pre><span></span>$ git checkout master
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout master
 Previous HEAD position was 3283e0d... Se añade un parámetro por defecto
 Switched to branch &#39;master&#39;
 </pre></div>
-
+</td></tr></table>
 
 <p>Modificamos <em>hola.php</em> de la siguiente manera:</p>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="c1">// Este comentario está mal y hay que borrarlo</span>
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">:</span> <span class="s2">&quot;Mundo&quot;</span><span class="p">;</span>
 <span class="o">@</span><span class="k">print</span> <span class="s2">&quot;Hola, </span><span class="si">{</span><span class="nv">$nombre</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Y comprobamos:</p>
-<div class="codehilite"><pre><span></span>$ git status
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git status
 # On branch master
 # Changes not staged for commit:
 #   (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)
@@ -614,10 +633,18 @@ Switched to branch &#39;master&#39;
 #
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
 </pre></div>
-
+</td></tr></table>
 
 <p>El mismo Git nos indica que debemos hacer para añadir los cambios o para deshacerlos:</p>
-<div class="codehilite"><pre><span></span>$ git checkout hola.php
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout hola.php
 $ git status
 # On branch master
 nothing to commit, working directory clean
@@ -627,20 +654,30 @@ $ cat hola.php
 $nombre = isset($argv[1]) ? $argv[1] : &quot;Mundo&quot;;
 @print &quot;Hola, {$nombre}\n&quot;;
 </pre></div>
-
+</td></tr></table>
 
 <h3 id="deshaciendo-cambios-antes-del-commit">Deshaciendo cambios antes del commit<a class="headerlink" href="#deshaciendo-cambios-antes-del-commit" title="Permanent link">&para;</a></h3>
 <p>Vamos a hacer lo mismo que la vez anterior, pero esta vez sí añadiremos el cambio al <em>staging</em> (sin hacer <em>commit</em>).
 Así que volvemos a modificar <em>hola.php</em> igual que la anterior ocasión:</p>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="c1">// Este comentario está mal y hay que borrarlo</span>
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">:</span> <span class="s2">&quot;Mundo&quot;</span><span class="p">;</span>
 <span class="o">@</span><span class="k">print</span> <span class="s2">&quot;Hola, </span><span class="si">{</span><span class="nv">$nombre</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Y lo añadimos al <em>staging</em></p>
-<div class="codehilite"><pre><span></span>$ git add hola.php
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git add hola.php
 $ git status
 # On branch master
 # Changes to be committed:
@@ -649,10 +686,22 @@ $ git status
 #   modified:   hola.php
 #
 </pre></div>
-
+</td></tr></table>
 
 <p>De nuevo, Git nos indica qué debemos hacer para deshacer el cambio:</p>
-<div class="codehilite"><pre><span></span>$ git reset HEAD hola.php
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git reset HEAD hola.php
 Unstaged changes after reset:
 M   hola.php
 $ git status
@@ -666,30 +715,45 @@ $ git status
 no changes added to commit (use &quot;git add&quot; and/or &quot;git commit -a&quot;)
 $ git checkout hola.php
 </pre></div>
-
+</td></tr></table>
 
 <p>Y ya tenemos nuestro repositorio limpio otra vez. Como vemos hay que hacerlo en dos pasos:
 uno para borrar los datos del <em>staging</em> y otro para restaurar la copia de trabajo.</p>
 <h3 id="deshaciendo-commits-no-deseados">Deshaciendo commits no deseados.<a class="headerlink" href="#deshaciendo-commits-no-deseados" title="Permanent link">&para;</a></h3>
 <p>Si a pesar de todo hemos hecho un commit y nos hemos equivocado, podemos deshacerlo con la orden <code>git revert</code>.
 Modificamos otra vez el archivo como antes:</p>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="c1">// Este comentario está mal y hay que borrarlo</span>
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">:</span> <span class="s2">&quot;Mundo&quot;</span><span class="p">;</span>
 <span class="o">@</span><span class="k">print</span> <span class="s2">&quot;Hola, </span><span class="si">{</span><span class="nv">$nombre</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Pero ahora sí hacemos commit:</p>
-<div class="codehilite"><pre><span></span>$ git add hola.php
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git add hola.php
 $ git commit -m &quot;Ups... este commit está mal.&quot;
 master 5a5d067] Ups... este commit está mal
  1 file changed, 1 insertion(+), 1 deletion(-)
 </pre></div>
-
+</td></tr></table>
 
 <p>Bien, una vez confirmado el cambio, vamos a deshacer el cambio con la orden <code>git revert</code>:</p>
-<div class="codehilite"><pre><span></span>$ git revert HEAD --no-edit
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git revert HEAD --no-edit
 [master 817407b] Revert &quot;Ups... este commit está mal&quot;
 1 file changed, 1 insertion(+), 1 deletion(-)
 $ git hist
@@ -700,11 +764,17 @@ $ git hist
 * efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
 * e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
 </pre></div>
-
+</td></tr></table>
 
 <h3 id="borrar-commits-de-una-rama">Borrar commits de una rama<a class="headerlink" href="#borrar-commits-de-una-rama" title="Permanent link">&para;</a></h3>
 <p>El anterior apartado revierte un commit, pero deja huella en el historial de cambios. Para hacer que no aparezca hay que usar la orden <code>git reset</code>.</p>
-<div class="codehilite"><pre><span></span>$ git reset --hard v1
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git reset --hard v1
 HEAD is now at fd4da94 Se añade un comentario al cambio del valor por defecto
 $ git hist
 * fd4da94 2013-06-16 | Se añade un comentario al cambio del valor por defecto (HEAD, tag: v1, master) [Sergio Góme
@@ -712,7 +782,7 @@ $ git hist
 * efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
 * e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
 </pre></div>
-
+</td></tr></table>
 
 <p>El resto de cambios no se han borrado (aún), simplemente no están accesibles porque git no sabe como referenciarlos. Si sabemos su hash podemos acceder aún a ellos. Pasado un tiempo, eventualmente Git tiene un recolector de basura que los borrará. Se puede evitar etiquetando el estado final.</p>
 <div class="admonition danger">
@@ -724,20 +794,26 @@ lo cual puede provocar problemas de sincronización.</p>
 <h3 id="modificar-un-commit">Modificar un commit<a class="headerlink" href="#modificar-un-commit" title="Permanent link">&para;</a></h3>
 <p>Esto se usa cuando hemos olvidado añadir un cambio a un commit que acabamos de realizar. Tenemos
 nuestro archivo <em>hola.php</em> de la siguiente manera:</p>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="c1">// Autor: Sergio Gómez</span>
 <span class="c1">// El nombre por defecto es Mundo</span>
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">:</span> <span class="s2">&quot;Mundo&quot;</span><span class="p">;</span>
 <span class="o">@</span><span class="k">print</span> <span class="s2">&quot;Hola, </span><span class="si">{</span><span class="nv">$nombre</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Y lo confirmamos:</p>
-<div class="codehilite"><pre><span></span>$ git commit -a -m &quot;Añadido el autor del programa&quot;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git commit -a -m &quot;Añadido el autor del programa&quot;
 [master cf405c1] Añadido el autor del programa
  1 file changed, 1 insertion(+)
 </pre></div>
-
+</td></tr></table>
 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -745,16 +821,29 @@ nuestro archivo <em>hola.php</em> de la siguiente manera:</p>
  o borrados (de los nuevos no), con lo que nos ahorramos un paso.</p>
 </div>
 <p>Ahora nos percatamos que se nos ha olvidado poner el correo electrónico. Así que volvemos a modificar nuestro archivo:</p>
-<div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="cp">&lt;?php</span>
 <span class="c1">// Autor: Sergio Gómez &lt;sergio@uco.es&gt;</span>
 <span class="c1">// El nombre por defecto es Mundo</span>
 <span class="nv">$nombre</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$argv</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$argv</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">:</span> <span class="s2">&quot;Mundo&quot;</span><span class="p">;</span>
 <span class="o">@</span><span class="k">print</span> <span class="s2">&quot;Hola, </span><span class="si">{</span><span class="nv">$nombre</span><span class="si">}</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
 </pre></div>
-
+</td></tr></table>
 
 <p>Y en esta ocasión usamos <code>commit --amend</code> que nos permite modificar el último estado confirmado, sustituyéndolo por el estado actual:</p>
-<div class="codehilite"><pre><span></span>$ git add hola.php
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git add hola.php
 $ git commit --amend -m &quot;Añadido el autor del programa y su email&quot;
 [master 96a39df] Añadido el autor del programa y su email
  1 file changed, 1 insertion(+)
@@ -765,7 +854,7 @@ $ git hist
 * efc252e 2013-06-16 | Parametrización del programa [Sergio Gómez]
 * e19f2c1 2013-06-16 | Creación del proyecto [Sergio Gómez]
 </pre></div>
-
+</td></tr></table>
 
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
@@ -776,7 +865,15 @@ problemas de sincronización.</p>
 <h2 id="moviendo-y-borrando-archivos">Moviendo y borrando archivos<a class="headerlink" href="#moviendo-y-borrando-archivos" title="Permanent link">&para;</a></h2>
 <h3 id="mover-un-archivo-a-otro-directorio-con-git">Mover un archivo a otro directorio con git<a class="headerlink" href="#mover-un-archivo-a-otro-directorio-con-git" title="Permanent link">&para;</a></h3>
 <p>Para mover archivos usaremos la orden <code>git mv</code>:</p>
-<div class="codehilite"><pre><span></span>$ mkdir lib
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ mkdir lib
 $ git mv hola.php lib
 $ git status
 # On branch master
@@ -786,25 +883,33 @@ $ git status
 #   renamed:    hola.php -&gt; lib/hola.php
 #
 </pre></div>
-
+</td></tr></table>
 
 <h3 id="mover-y-borrar-archivos">Mover y borrar archivos.<a class="headerlink" href="#mover-y-borrar-archivos" title="Permanent link">&para;</a></h3>
 <p>Podíamos haber hecho el paso anterior con la órden del sistema <em>mv</em> y el resultado hubiera sido el mismo. Lo siguiente es a modo de ejemplo y no es necesario que lo ejecutes:</p>
-<div class="codehilite"><pre><span></span>$ mkdir lib
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ mkdir lib
 $ mv hola.php lib
 $ git add lib/hola.php
 $ git rm hola.php
 </pre></div>
-
+</td></tr></table>
 
 <p>Y, ahora sí, ya podemos guardar los cambios:</p>
-<div class="codehilite"><pre><span></span>$ git commit -m &quot;Movido hola.php a lib.&quot;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git commit -m &quot;Movido hola.php a lib.&quot;
 [master 8c2a509] Movido hola.php a lib.
  1 file changed, 0 insertions(+), 0 deletions(-)
  rename hola.php =&gt; lib/hola.php (100%)
 </pre></div>
+</td></tr></table>
                 
                   
+                
                 
               
               
@@ -866,7 +971,6 @@ $ git rm hola.php
           Material for MkDocs</a>
       </div>
       
-        
   <div class="md-footer-social">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.css">
     
@@ -876,16 +980,17 @@ $ git rm hola.php
     
       <a href="https://facebook.com/aulasl" class="md-footer-social__link fa fa-facebook"></a>
     
+      <a href="https://instagram.com/aulasoftwarelibre" class="md-footer-social__link fa fa-instagram"></a>
+    
   </div>
 
-      
     </div>
   </div>
 </footer>
       
     </div>
     
-      <script src="../assets/javascripts/application.30f6b8b1.js"></script>
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
       
         
         
@@ -902,12 +1007,7 @@ $ git rm hola.php
           
         
       
-      <script>app.initialize({version:"0.17.5",url:{base:".."}})</script>
-      
-    
-    
-      
-        <script>!function(e,a,t,n,o,c,i){e.GoogleAnalyticsObject=o,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=1*new Date,c=a.createElement(t),i=a.getElementsByTagName(t)[0],c.async=1,c.src="https://www.google-analytics.com/analytics.js",i.parentNode.insertBefore(c,i)}(window,document,"script",0,"ga"),ga("create","UA-51754922-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");if(Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var a=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",a,e.href)})}),document.forms.search){var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})}</script>
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
     
   </body>
