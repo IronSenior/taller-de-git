@@ -1161,13 +1161,27 @@ git log --oneline --all
 </td></tr></table>
 
 <h3 id="crear-alias">Crear alias<a class="headerlink" href="#crear-alias" title="Permanent link">&para;</a></h3>
-<p>Como estas órdenes son demasiado largas, Git nos permite crear alias para crear nuevas órdenes parametrizadas. Para ello editaremos un archivo llamado <code>.gitconfig</code> que está en nuestro <code>$HOME</code> y le añadiremos estas líneas al final:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>[alias]
-  hist = log --pretty=format:&#39;%h %ad | %s%d [%an]&#39; --graph --date=short
+<p>Como estas órdenes son demasiado largas, Git nos permite crear alias para crear nuevas órdenes parametrizadas. Para ello podemos configurar nuestro entorno con la orden <code>git config</code> de la siguiente manera:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git config --global alias.hist &quot;log --pretty=format:&#39;%h %ad | %s%d [%an]&#39; --graph --date=short&quot;
 </pre></div>
 </td></tr></table>
 
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Puedes configurar incluso alias para abreviar comandos. Algunos ejemplos de alias útiles:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git config --global alias.br branch
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.st &quot;status -u&quot;
+git config --global alias.cane &quot;commit --amend --no-edit&quot;
+</pre></div>
+</td></tr></table>
+
+</div>
 <h3 id="recuperando-versiones-anteriores">Recuperando versiones anteriores<a class="headerlink" href="#recuperando-versiones-anteriores" title="Permanent link">&para;</a></h3>
 <p>Cada cambio es etiquetado por un hash, para poder regresar a ese momento del estado del proyecto se usa la orden <code>git checkout</code>.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1

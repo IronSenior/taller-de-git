@@ -356,6 +356,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tu-clave-publicaprivada" class="md-nav__link">
+    Tu clave pública/privada
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configuracion" class="md-nav__link">
     Configuración
   </a>
@@ -499,6 +506,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tu-clave-publicaprivada" class="md-nav__link">
+    Tu clave pública/privada
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#configuracion" class="md-nav__link">
     Configuración
   </a>
@@ -604,6 +618,19 @@
 <li>Sistemas de seguimiento de incidencias.</li>
 </ul>
 <p>Lo primero es entrar en el portal (<a href="https://github.com/">https://github.com/</a>) para crearnos una cuenta si no la tenemos aún.</p>
+<h2 id="tu-clave-publicaprivada">Tu clave pública/privada<a class="headerlink" href="#tu-clave-publicaprivada" title="Permanent link">&para;</a></h2>
+<p>Muchos servidores Git utilizan la autentificación a través de claves públicas SSH. Y, para ello, cada usuario del sistema ha de generarse una, si es que no la tiene ya. El proceso para hacerlo es similar en casi cualquier sistema operativo. Ante todo, asegurarte que no tengas ya una clave. (comprueba que el directorio <code>$HOME/usuario/.ssh</code> no tiene un archivo id_dsa.pub o id_rsa.pub).</p>
+<p>Para crear una nueva clave usamos la siguiente orden:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ssh-keygen -t rsa -C &quot;Cuenta Thinstation&quot;
+</pre></div>
+</td></tr></table>
+
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Tu clave RSA te identifica contra los repositorios remotos, asegúrate de
+no compartir la clave privada con nadie. Por defecto la clave se crea como
+<em>solo lectura</em>.</p>
+</div>
 <h2 id="configuracion">Configuración<a class="headerlink" href="#configuracion" title="Permanent link">&para;</a></h2>
 <p>Vamos a aprovechar para añadir la clave RSA que generamos antes, para poder acceder desde git a los repositorios. Para ellos nos vamos al menú de configuración de usuario (<em>Settings</em>)</p>
 <p><img alt="Barra principal de menú" src="../images/github-topbar.png" /></p>

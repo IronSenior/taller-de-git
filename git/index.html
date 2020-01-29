@@ -363,13 +363,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#tu-clave-publicaprivada" class="md-nav__link">
-    Tu clave pública/privada
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -546,13 +539,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#tu-clave-publicaprivada" class="md-nav__link">
-    Tu clave pública/privada
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -616,19 +602,6 @@ $ git config --global user.email johndoe@example.com
 
 <h3 id="bash-completion">Bash Completion<a class="headerlink" href="#bash-completion" title="Permanent link">&para;</a></h3>
 <p><em>Bash completion</em> es una utilidad que permite a bash completar órdenes y parámetros. Por defecto suele venir desactivada en Ubuntu y es necesario modificar el archivo <code>$HOME/.bashrc</code> para poder activarla. Simplemente hay que descomentar las líneas que lo activan,</p>
-<h3 id="tu-clave-publicaprivada">Tu clave pública/privada<a class="headerlink" href="#tu-clave-publicaprivada" title="Permanent link">&para;</a></h3>
-<p>Muchos servidores Git utilizan la autentificación a través de claves públicas SSH. Y, para ello, cada usuario del sistema ha de generarse una, si es que no la tiene ya. El proceso para hacerlo es similar en casi cualquier sistema operativo. Ante todo, asegurarte que no tengas ya una clave. (comprueba que el directorio <code>$HOME/usuario/.ssh</code> no tiene un archivo id_dsa.pub o id_rsa.pub).</p>
-<p>Para crear una nueva clave usamos la siguiente orden:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ ssh-keygen -t rsa -C &quot;Cuenta Thinstation&quot;
-</pre></div>
-</td></tr></table>
-
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Tu clave RSA te identifica contra los repositorios remotos, asegúrate de
-no compartir la clave privada con nadie. Por defecto la clave se crea como
-<em>solo lectura</em>.</p>
-</div>
                 
                   
                 
