@@ -40,7 +40,7 @@
     
     
       
-        <title>Comandos de git - Taller de Git</title>
+        <title>Flujo de trabajo en GitHub - Taller de Git</title>
       
     
     
@@ -108,7 +108,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#comandos-de-git" tabindex="1" class="md-skip">
+      <a href="#flujo-de-trabajo-en-github" tabindex="1" class="md-skip">
         Saltar a contenido
       </a>
     
@@ -134,7 +134,7 @@
             </span>
             <span class="md-header-nav__topic">
               
-                Comandos de git
+                Flujo de trabajo en GitHub
               
             </span>
           
@@ -339,11 +339,111 @@
       
       
 
+  
 
-  <li class="md-nav__item">
-    <a href="../github-flow/" title="Flujo de trabajo en GitHub" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Flujo de trabajo en GitHub
+      </label>
+    
+    <a href="./" title="Flujo de trabajo en GitHub" class="md-nav__link md-nav__link--active">
       Flujo de trabajo en GitHub
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#paso-0-abrir-una-incidencia-issue" class="md-nav__link">
+    Paso 0. Abrir una incidencia (issue)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-1-crear-una-rama" class="md-nav__link">
+    Paso 1. Crear una rama
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-2-crear-commits" class="md-nav__link">
+    Paso 2. Crear commits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-3-discutir" class="md-nav__link">
+    Paso 3. Discutir
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-4-desplegar" class="md-nav__link">
+    Paso 4. Desplegar
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-merge-commit" class="md-nav__link">
+    Crear un merge commit
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-rebase-y-merge" class="md-nav__link">
+    Crear un rebase y merge
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-squash-commit-y-un-merge" class="md-nav__link">
+    Crear un squash commit y un merge
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-5-sincronizar" class="md-nav__link">
+    Paso 5. Sincronizar
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
     
@@ -363,152 +463,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Comandos de git
-      </label>
-    
-    <a href="./" title="Comandos de git" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../commands/" title="Comandos de git" class="md-nav__link">
       Comandos de git
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">Tabla de contenidos</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#git-stash-reserva" class="md-nav__link">
-    Git stash (reserva)
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-save" class="md-nav__link">
-    git stash save
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-list" class="md-nav__link">
-    git stash list
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-apply" class="md-nav__link">
-    git stash apply
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-pop" class="md-nav__link">
-    git stash pop
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-show" class="md-nav__link">
-    git stash show
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-branch" class="md-nav__link">
-    git stash branch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-clear" class="md-nav__link">
-    git stash clear
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-drop" class="md-nav__link">
-    git stash drop
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#git-worktree" class="md-nav__link">
-    Git worktree
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-worktree-add" class="md-nav__link">
-    git worktree add
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-worktree-list" class="md-nav__link">
-    git worktree list
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-worktree-remove" class="md-nav__link">
-    git worktree remove
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-worktree-prune" class="md-nav__link">
-    git worktree prune
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-      
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -557,65 +516,58 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#git-stash-reserva" class="md-nav__link">
-    Git stash (reserva)
+  <a href="#paso-0-abrir-una-incidencia-issue" class="md-nav__link">
+    Paso 0. Abrir una incidencia (issue)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-1-crear-una-rama" class="md-nav__link">
+    Paso 1. Crear una rama
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-2-crear-commits" class="md-nav__link">
+    Paso 2. Crear commits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-3-discutir" class="md-nav__link">
+    Paso 3. Discutir
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paso-4-desplegar" class="md-nav__link">
+    Paso 4. Desplegar
   </a>
   
     <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#git-stash-save" class="md-nav__link">
-    git stash save
+  <a href="#crear-un-merge-commit" class="md-nav__link">
+    Crear un merge commit
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#git-stash-list" class="md-nav__link">
-    git stash list
+  <a href="#crear-un-rebase-y-merge" class="md-nav__link">
+    Crear un rebase y merge
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#git-stash-apply" class="md-nav__link">
-    git stash apply
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-pop" class="md-nav__link">
-    git stash pop
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-show" class="md-nav__link">
-    git stash show
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-branch" class="md-nav__link">
-    git stash branch
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-clear" class="md-nav__link">
-    git stash clear
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-stash-drop" class="md-nav__link">
-    git stash drop
+  <a href="#crear-un-squash-commit-y-un-merge" class="md-nav__link">
+    Crear un squash commit y un merge
   </a>
   
 </li>
@@ -626,43 +578,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#git-worktree" class="md-nav__link">
-    Git worktree
+  <a href="#paso-5-sincronizar" class="md-nav__link">
+    Paso 5. Sincronizar
   </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git-worktree-add" class="md-nav__link">
-    git worktree add
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-worktree-list" class="md-nav__link">
-    git worktree list
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-worktree-remove" class="md-nav__link">
-    git worktree remove
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#git-worktree-prune" class="md-nav__link">
-    git worktree prune
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -682,110 +600,218 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/aulasoftwarelibre/taller-de-git.git/edit/master/docs/commands.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/aulasoftwarelibre/taller-de-git.git/edit/master/docs/github-flow.md" title="Editar esta página" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="comandos-de-git">Comandos de git<a class="headerlink" href="#comandos-de-git" title="Permanent link">&para;</a></h1>
-<p>Esta sección describe algunos de los comandos más interesantes de git</p>
-<h2 id="git-stash-reserva">Git stash (reserva)<a class="headerlink" href="#git-stash-reserva" title="Permanent link">&para;</a></h2>
-<p>La orden <code>git stash</code> nos permite salvar momentáneamente el espacio de trabajo cuando tenemos que cambiar de rama o preparar la rama actual para sincronizar cambios.</p>
-<p>Las operaciones más importantes que podemos hacer con <code>git stash</code> son:</p>
-<h3 id="git-stash-save">git stash save<a class="headerlink" href="#git-stash-save" title="Permanent link">&para;</a></h3>
-<p>Es equivalente a poner solo <code>git stash</code> pero nos permite realizar más acciones como:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git stash save &quot;Tu mensaje&quot;
-git stash save -u
-</pre></div>
-</td></tr></table>
-
-<p>El parámetro <code>-u</code> permite que se almacen también los ficheros sin seguimiento previo (<em>untracked</em> en inglés, aquellos ficheros que no se han metido nunca en el repositorio).</p>
-<h3 id="git-stash-list">git stash list<a class="headerlink" href="#git-stash-list" title="Permanent link">&para;</a></h3>
-<p>Permite mostrar la pila del stash.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git stash list
-stash@{0}: On master: Stash con mensaje
-stash@{1}: WIP on master: 4ab21df First commit
-</pre></div>
-</td></tr></table>
-
-<h3 id="git-stash-apply">git stash apply<a class="headerlink" href="#git-stash-apply" title="Permanent link">&para;</a></h3>
-<p>Esta orden coge el stash que está arriba en la pila y lo aplica al espacio de trabajo actual. En este caso siempre es <code>stash@{0}</code>. El stash permanece en la pila.</p>
-<p>Se puede indicar como parámetro un stash en concreto.</p>
-<h3 id="git-stash-pop">git stash pop<a class="headerlink" href="#git-stash-pop" title="Permanent link">&para;</a></h3>
-<p>Funciona igual que <code>git apply</code> con la diferencia de que el stash sí se borra de la pila.</p>
-<h3 id="git-stash-show">git stash show<a class="headerlink" href="#git-stash-show" title="Permanent link">&para;</a></h3>
-<p>Muestra un resumen de los ficheros que se han modificado en ese stash.</p>
+                <h1 id="flujo-de-trabajo-en-github">Flujo de trabajo en GitHub<a class="headerlink" href="#flujo-de-trabajo-en-github" title="Permanent link">&para;</a></h1>
+<h2 id="paso-0-abrir-una-incidencia-issue">Paso 0. Abrir una incidencia (issue)<a class="headerlink" href="#paso-0-abrir-una-incidencia-issue" title="Permanent link">&para;</a></h2>
+<p>Habitualmente el trabajo puede partir a raíz de una reporte por parte de un miembro del equipo o de una persona externa. Para eso tenemos la sección <em>Issues</em>.</p>
+<p><img alt="Listado de Issues" src="../images/github-issues-list.png" /></p>
+<p>Una issue cuando se crea se compone de un título y una descripción en
+Markdown. Si la persona es miembro del equipo, opcionalmente puede
+asignarle una serie de metadatos: etiquetas (labels), hitos
+(milestone), proyecto al que pertenece o responsables encargados
+de cerrar la incidencia.</p>
+<p><img alt="Nueva Issue" src="../images/github-issues-new.png" /></p>
+<p>Una vez creado, al mismo se le asignará un número.ç</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Vamos a crear una incidencia llamada "Crear archivo de autores", donde indiquemos que vamos a crear un archivo <code>AUTHORS.md</code> con
+la lista de desarrolladores del proyecto.</p>
+</div>
+<h2 id="paso-1-crear-una-rama">Paso 1. Crear una rama<a class="headerlink" href="#paso-1-crear-una-rama" title="Permanent link">&para;</a></h2>
+<p>Crearemos una rama cada vez que queramos implementar una nueva característica al proyecto que estamos realizando. La misma puede estar provocada por una incidencia o no.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Es una buena costumbre crear en Issues el listado de casos de uso,
+requisitos, hostorias de usuario o tareas (como lo queramos llamar),
+para tener un registro del trabajo que llevamos y el que nos queda.</p>
+</div>
+<p>El nombre de la rama puede ser el que creamos conveniente, pero hay que
+intentar ser coherente y usar siempre el mismo método, sobre todo si
+trabajamos en equipo.</p>
+<p>Un método puede ser el siguiente:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git stash show
-A.txt | 1 +
-B.txt | 3 +++
-2 file changed, 4 insertions(+)
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ # tipo-número/descripción
+$ git checkout -b feature-1/create-changelog
+$ git checkout -b hotfix-2/updated-database
 </pre></div>
 </td></tr></table>
 
-<p>Para ver los cambios podemos usar el parámetro <code>-p</code></p>
+<p>En entornos de trabajo multiusuario se puede usar el siguiente:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ # usuario/tipo-número/descripción
+$ git checkout -b sgomez/feature-1/create-changelog
+$ git checkout -b sgomez/hotfix-2/updated-database
+</pre></div>
+</td></tr></table>
+
+<p>De esa manera, podemos seguir fácilmente quién abrió la rama, en qué consiste y a qué <em>issues</em> está conectada. Pero como decimos es más un convenio que una imposición, pudiéndole poner el nombre que queramos.</p>
+<p>Vamos a crear la rama y los commits correspondientes y subir la rama con push al servidor.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout -b sgomez/feature-1/create-changelog
+$ git add AUTHORS.md
+$ git commit -m &quot;Añadido fichero de autores&quot;
+</pre></div>
+</td></tr></table>
+
+<p>El archivo puede contener, por ejemplo, lo siguiente:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span># AUTHORS
+
+* Sergio Gómez &lt;sergio@uco.es&gt;
+</pre></div>
+</td></tr></table>
+
+<p>Hacemos push y obtenemos algo como esto:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
 4
-5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git stash show -p
---- a/A.txt
-+++ b/A.txt
-@@ -45,6 +45,7 @@ nav:
-+ This is a change
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git push
+fatal: The current branch sgomez/feature-1/create-changelog has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin sgomez/feature-1/create-changelog
 </pre></div>
 </td></tr></table>
 
-<p>Por defecto siempre muestra la cabeza de la pila. Igual que en casos anteriores podemos indicar un stash en concreto.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git stash show stash@{1}
+<p>Como la rama es nueva, git no sabe <em>dónde</em> debe hacer push. Le indicamos que debe hacerla en <em>origin</em> y además que guarde la vinculación (equivalente al parámetro -u que vimos en el capítulo anterior). Probamos de nuevo:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git push -u origin sgomez/feature-1/create-changelog
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.03 KiB | 1.03 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for &#39;sgomez/feature-1/create-changelog&#39; on GitHub by visiting:
+remote:      https://github.com/sgomez/taller-de-git/pull/new/sgomez/feature-1/create-changelog
+remote:
+To github.com:sgomez/taller-de-git.git
+* [new branch]      sgomez/feature-1/create-changelog -&gt; sgomez/feature-1/create-changelog
+Branch &#39;sgomez/feature-1/create-changelog&#39; set up to track remote branch &#39;sgomez/feature-1/create-changelog&#39; from &#39;origin&#39;.
 </pre></div>
 </td></tr></table>
 
-<h3 id="git-stash-branch">git stash branch<a class="headerlink" href="#git-stash-branch" title="Permanent link">&para;</a></h3>
-<p>Permite crear una nueva rama a partir del último stash. Además, el mismo es borrado de la pila. Se puede especificar uno en concreto si lo queremos, como en el resto de comandos.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>git stash branch nombre-de-nueva-rama stash@{1}
+<p>Ahora la rama ya se ha subido y nos informa, además, de que podemos crear un <em>Pull Request</em> (PR). Si vamos al enlace que nos aparece veremos lo siguiente:</p>
+<p><img alt="Nuevo Pull Request" src="../images/github-flow-pr.png" /></p>
+<p>Aquí podemos informar de en qué consiste la rama que estamos enviando. Si ya tenemos una <em>issue</em> abierta, no es necesario repetir la misma información. Podemos hacer referencia con el siguiente texto:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Closes #1
 </pre></div>
 </td></tr></table>
 
-<h3 id="git-stash-clear">git stash clear<a class="headerlink" href="#git-stash-clear" title="Permanent link">&para;</a></h3>
-<p>Este comando borrar todos los stash de la pila. Es destructiva y no se puede deshacer.</p>
-<h3 id="git-stash-drop">git stash drop<a class="headerlink" href="#git-stash-drop" title="Permanent link">&para;</a></h3>
-<p>Permite borrar un stash en concreto (o el último si no se indica ninguno). Como con clear, borrarlo implica que no se puede recuperar.</p>
-<h2 id="git-worktree">Git worktree<a class="headerlink" href="#git-worktree" title="Permanent link">&para;</a></h2>
-<p>Uno de los problemas más habituales es tener que tocar una rama distinta a la que tenemos actualmente. Eso implica que si estamos en medio de un trabajo tendríamos que hacer un commit o un stash, lo cual a veces es bastante molesto.</p>
-<p>Con <code>git worktree</code> podemos crear un directorio de trabajo que contenga otra rama distinta, de forma temporal. No supone otro clon del repositorio porque ambos usan el mismo.</p>
-<h3 id="git-worktree-add">git worktree add<a class="headerlink" href="#git-worktree-add" title="Permanent link">&para;</a></h3>
-<p>Esta función es la que crea el espacio de trabajo temporal. Imaginemos que estamos en una rama llamada <code>develop</code>:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git worktree add ../project-master master
-$ git worktree add -b fix ../project-fix master
-</pre></div>
-</td></tr></table>
-
-<p>La primera orden crea un directorio llamado project-master que contiene el estado de master. La segunda, que contiene el parámetro <code>-b</code> equivale a crear una nueva rama llamada fix, que se crea desde master (suponemos que no existe fix).</p>
-<h3 id="git-worktree-list">git worktree list<a class="headerlink" href="#git-worktree-list" title="Permanent link">&para;</a></h3>
-<p>Muestra el listado de directorios y espacios de trabajo.</p>
+<p>Esto lo que le indica a GitHub que esta PR cierra el <em>issues</em> número 1. Cuando se haga el merge de la rama, automáticamente se cerrará la incidencia.</p>
+<p>Lo hacemos y le damos a crear.</p>
+<p><img alt="Nuevo Pull Request" src="../images/github-flow-pr-created.png" /></p>
+<h2 id="paso-2-crear-commits">Paso 2. Crear commits<a class="headerlink" href="#paso-2-crear-commits" title="Permanent link">&para;</a></h2>
+<p>A partir de ahora podemos seguir creando commits en local y enviarlos hasta que terminemos de trabajar.</p>
+<p>Editamos el archivo AUTHORS.md .</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$git worktree list
-/home/sergio/taller-de-git  3b63b4b [master]
-/home/sergio/fix           3b63b4b [fix]
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span># AUTHORS
+
+* Sergio Gómez &lt;sergio@uco.es&gt;
+* John Doe
 </pre></div>
 </td></tr></table>
 
-<h3 id="git-worktree-remove">git worktree remove<a class="headerlink" href="#git-worktree-remove" title="Permanent link">&para;</a></h3>
-<p>Borrar un espacio de trabajo. Hay que indicar el nombre entre corchetes que aparece en el listado</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git worktree delete fix
+<p>Y mandamos otro commit</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git commit -am &quot;Actualizado AUTHORS.md&quot;
+$ git push
 </pre></div>
 </td></tr></table>
 
-<h3 id="git-worktree-prune">git worktree prune<a class="headerlink" href="#git-worktree-prune" title="Permanent link">&para;</a></h3>
-<p>Una cuestión importante, es que las ramas que estén desplegadas en otro espacio de trabajo, se encuentran bloqueadas y no se pueden desbloquear en otro distinto.</p>
-<p>Esto significa que si estamos trabajando en la rama developer, creamos otro worktree en otro directorio de la rama master, no podemos hacer pasar a master. No es posible tener la misma rama en varios espacios de trabajo.</p>
-<p>Si se ha borrado el directorio a mano (en vez de usando remove), eso no implica que el bloqueo desparezca. Con esta orden podemos hacer que git compruebe que los espacios de trabajo secundario se comprueben de nuevo para ver si siguen existiendo y se elimine el bloqueo.</p>
+<p>Si volvemos a la página de PR, veremos que aparece el nuevo commit que acabamos de enviar.</p>
+<h2 id="paso-3-discutir">Paso 3. Discutir<a class="headerlink" href="#paso-3-discutir" title="Permanent link">&para;</a></h2>
+<p>GitHub permite que entre los desarrolladores se pueda abrir una discusión sobre el código, de tal manera que el trabajo de crear la rama sea colaborativo. Se puede incluso pedir revisiones por parte de terceros y que esas revisiones sean obligatorias antes de aceptar los cambios.</p>
+<h2 id="paso-4-desplegar">Paso 4. Desplegar<a class="headerlink" href="#paso-4-desplegar" title="Permanent link">&para;</a></h2>
+<p>Una vez que hemos terminado de crear la función de la rama ya podemos incorporar los cambios a <em>master</em>. Este trabajo ya no es necesario hacerlo en local y GitHub nos proporciona 3 maneras de hacerlo:</p>
+<p><img alt="Cómo cerrar un Pull Request" src="../images/github-flow-merge.png" /></p>
+<h3 id="crear-un-merge-commit">Crear un merge commit<a class="headerlink" href="#crear-un-merge-commit" title="Permanent link">&para;</a></h3>
+<p>Esta opción es el equivalente a hacer lo siguiente en nuestro repositorio:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout master
+$ git merge --no-ff sgomez/feature-1/create-changelog
+$ git push
+</pre></div>
+</td></tr></table>
+
+<p>Es decir, el equivalente a hacer un merge entre nuestra rama y master.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+</div>
+<p>GitHub siempre desactiva el <em>fast forward</em>.</p>
+<h3 id="crear-un-rebase-y-merge">Crear un rebase y merge<a class="headerlink" href="#crear-un-rebase-y-merge" title="Permanent link">&para;</a></h3>
+<p>Esta opción es el equivalente a hacer lo siguiente en nuestro repositorio</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git rebase master
+$ git checkout master
+$ git merge --no-ff sgomez/feature-1/create-changelog
+$ git push
+</pre></div>
+</td></tr></table>
+
+<p>Es decir, nos aseguramos de que nuestra rama está al final de <em>master</em> haciendo <em>rebase</em>, como vimos en el capítulo de ramas, y posteriormente se hace el merge.</p>
+<h3 id="crear-un-squash-commit-y-un-merge">Crear un squash commit y un merge<a class="headerlink" href="#crear-un-squash-commit-y-un-merge" title="Permanent link">&para;</a></h3>
+<p>Esta opción es el equivalente a hacer lo siguiente en nuestro repositorio:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout master
+$ git merge --squash sgomez/feature-1/create-changelog
+$ git push
+</pre></div>
+</td></tr></table>
+
+<p>Esta opción es algo especial. En vez de aplicar cada uno de los commits en la rama master, ya sea directamente (<em>fast forward</em>) o no, lo que hace es crear un solo commit con los cambios de todos los commits de la rama. El efecto final es como si en la rama solo hubiera producido un solo commit.</p>
+<p>Vamos a seleccionar este último (squash and merge) y le damos al botón para activarlo. Nos saldrá una caja para que podamos crear una descripción del commit y le damos a confirmar.</p>
+<p><img alt="Pull Request cerrado" src="../images/github-flow-merge.png" /></p>
+<p>Ya hemos terminado y nos aparecerá una opción para borrar la rama, lo más recomendado para no tener ramas obsoletas.</p>
+<p>Las consecuencias de esta acción son las siguientes:</p>
+<ol>
+<li>El PR aparecerá como estado <em>merged</em> y en la lista de PR como cerrado.</li>
+<li>El <em>issue</em> que abrimos se habrá cerrado automáticamente.</li>
+<li>En el listado de commits aparecerá solo uno con un enlace al PR (en vez de los dos commits que hicimos).</li>
+</ol>
+<h2 id="paso-5-sincronizar">Paso 5. Sincronizar<a class="headerlink" href="#paso-5-sincronizar" title="Permanent link">&para;</a></h2>
+<p>Hemos cambiado el repositorio en GitHub, pero nuestra rama master no contiene los mismos cambios que el de origin. Así que nos toca sincronizar y borrar la rama obsoleta:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>$ git checkout master
+$ git pull --rebase --autostash
+$ git branch -D sgomez/feature-1/create-changelog
+</pre></div>
+</td></tr></table>
+
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>¿Por qué <em>squash and merge</em> y no un <em>merge</em> o <em>rebase</em>? De nuevo
+depende de los gustos de cada equipo de desarrollo. Las cracterísticas de <em>squash</em> es que elimina (relativamente) rastros de errores intermedios mientras se implementaba la rama, deja menos commits en la rama <em>master</em> y nos enlace al PR donde se implementaron los cambios.</p>
+<p>Para algunas personas estas características son unas ventajas, para otras no. Lo mejor es experimentar cada opción y cada uno decida
+como quiere trabajar.</p>
+</div>
                 
                   
                 
@@ -807,7 +833,7 @@ $ git worktree add -b fix ../project-fix master
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../github-avanzado/" title="Github avanzado" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../github/" title="Github" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -816,19 +842,19 @@ $ git worktree add -b fix ../project-fix master
                 <span class="md-footer-nav__direction">
                   Anterior
                 </span>
-                Github avanzado
+                Github
               </span>
             </div>
           </a>
         
         
-          <a href="../gitflow/" title="Flujo de trabajo con Git (git flow)" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../github-avanzado/" title="Github avanzado" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Siguiente
                 </span>
-                Flujo de trabajo con Git (git flow)
+                Github avanzado
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
